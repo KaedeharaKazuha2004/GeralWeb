@@ -11,34 +11,88 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
     crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/80e4230b37.js" crossorigin="anonymous"></script>
+    <link rel="/images/Logo.png" href="">
     <title>Geral</title>
 </head>
 <body>
     <header>
-        <img src="/images/Logo.png" alt="" class="logo">
         <div class="header-container">
-            <!-- đây là thanh menu -->
-            <ul class="menu">
-                <li class="menu-item">Sản phẩm</li>
-                <li class="menu-item">Dịch vụ</li>
-                <li class="menu-item"></li>
-                <li class="menu-item"></li>
-                <li class="menu-item"></li>
-            </ul>
-        </div>
+            <img src="/images/Logo.png" alt="Logo of this web" class="logo">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Product</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Kitchen</a></li>
+                    <li><a class="dropdown-item" href="#">Living room</a></li>
+                    <li><a class="dropdown-item" href="#">Bed room</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Advices</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " >Disabled</a>
+                </li>
+              </ul>
+           <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">More</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Advices</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Product
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Kitchen</a></li>
+                          <li><a class="dropdown-item" href="#">Living room</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Bed room</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            
+        </div> 
+         
+        
     </header>
     <div class="page-body">
         <div class="container border">
             <div class="row border">
-                <div class="col-md ">Phòng ngủ (chèn background)</div>
-                <div class="col-md">Phòng khách (chèn background)</div>
+                <div class="col-md col-8 ">Phòng ngủ (chèn background)</div>
+                <div class="col-md col-4">Phòng khách (chèn background)</div>
             </div>
             <div class="row border">
-                <div class="col-md">Không gian bếp (chèn background)</div>
-                <div class="col-md">khác (chèn background)</div>
+                <div class="col-md col-5">Không gian bếp (chèn background)</div>
+                <div class="col-md col-7">khác (chèn background)</div>
             </div>
         </div>
-
+        
         
         <div class="container-fluid border"> Sản phẩm bán chạy</div>
 

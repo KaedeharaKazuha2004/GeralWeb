@@ -6,3 +6,12 @@
     
 }
 
+.logo {
+    width: 50px; /* Đặt chiều rộng */
+    height: auto; /* Tự động tính chiều cao dựa trên tỷ lệ khung hình gốc */
+    margin-top: 10px; /* Đặt khoảng cách từ trên xuống */
+    margin-left: 20px; /* Đặt khoảng cách từ trái qua */
+    border: 1px solid #000; /* Thêm viền đen với độ rộng 1px */
+    border-radius: 5px; /* Bo góc ảnh */
+  }
+  
