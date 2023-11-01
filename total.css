@@ -1,4 +1,6 @@
-
+body{
+    background-image: linear-gradient(to right, #edf6e8, #f8edd2, #f6d7d8);
+}
 .col-md{
     padding: 3rem;
     border: 3px solid #fff;
@@ -14,4 +16,10 @@
     border: 1px solid #000; /* Thêm viền đen với độ rộng 1px */
     border-radius: 5px; /* Bo góc ảnh */
   }
-  
+  .introduce {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+  }
