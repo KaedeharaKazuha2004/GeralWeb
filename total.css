@@ -23,3 +23,19 @@ body{
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
   }
+  .sale-product {
+    width: 100%;
+    clear: both;
+    padding-left: 100px;
+   
+    
+   }
+  .sale-product .card , .Best-seller .card {
+    float: left;
+  margin-right: 10px;
+  }
+  .Best-seller {
+    width: 100%;
+    clear: both;
+    padding-left: 100px;
+  }
