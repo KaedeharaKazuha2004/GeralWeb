@@ -30,12 +30,20 @@ body{
    
     
    }
-  .sale-product .card , .Best-seller .card {
+  .sale-product .card , .Best-seller .card ,.item .card{
     float: left;
   margin-right: 10px;
   }
-  .Best-seller {
+  .Best-seller,.item {
     width: 100%;
     clear: both;
     padding-left: 100px;
   }
+.orange{
+  color: #ef683a;
+  
+}
+.item {
+  @extend .Best-seller;
+  /* Thuộc tính của item sẽ kế thừa từ Best-seller */
+}
