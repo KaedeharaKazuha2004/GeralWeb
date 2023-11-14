@@ -48,3 +48,24 @@ body{
   /* Thuộc tính của item sẽ kế thừa từ Best-seller */
 }
 
+#banner {
+  width: 100%;
+  padding: 50px 0 50px 0;
+}
+
+#search {
+  font-size: 20px; 
+  color: #f49da0; 
+  width: 60px;
+}
+
+#profile {
+  font-size: 20px;
+  width: 50px;
+  color: #f49da0; 
+  margin-left: 10px;
+}
+
+#tb {
+  padding: 10px 10px 10px 10px;
+}
