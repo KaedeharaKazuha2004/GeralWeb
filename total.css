@@ -43,11 +43,6 @@ body{
   color: #ef683a;
   
 }
-.item {
-  @extend .Best-seller;
-  /* Thuộc tính của item sẽ kế thừa từ Best-seller */
-}
-
 #banner {
   width: 100%;
   padding: 50px 0 50px 0;
@@ -69,9 +64,45 @@ body{
 #tb {
   padding: 10px 10px 10px 10px;
 }
-
+/* Trang Sản Phẩm */
 .cart_page {
   padding: 75px 0 0 0;
 }
 
+.item {
+  @extend .Best-seller;
+  /* Thuộc tính của item sẽ kế thừa từ Best-seller */
+}
+.select-Item div  {
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
 
+.name-item-font:hover {
+  color:orangered;
+  cursor: pointer; /*di chuột lên tên sản phẩm thì đổi màu tên sản phẩm*/
+}
+.btn-primary {
+  visibility: hidden;
+}
+div.card:hover .btn-primary {
+  visibility: visible;
+}
+div.card{
+  margin:10px;
+  border: 4px solid rgba(0,0, 0, 0);
+}
+div.card:hover {
+  border:4px solid #d2c8b3;
+}
+.card-title:hover {
+  color:orangered;
+  cursor: pointer; /*di chuột lên tên sản phẩm thì đổi màu tên sản phẩm*/
+}
+div.card:hover .card-body {
+  transform: scale(1.1);
+}
+div.card:hover img {
+  transform: scale(0.95);
+}
