@@ -106,3 +106,16 @@ div.card:hover .card-body {
 div.card:hover img {
   transform: scale(0.95);
 }
+.order-step { 
+  margin-bottom:5px;
+  width:80%; 
+  text-align: center; 
+  margin: 10px;
+}
+.order-step div {
+  border:1px solid #ed4190;
+  border-radius: 5px;
+  padding-top:5px; 
+  width:24%;
+  display:inline-block;
+}
