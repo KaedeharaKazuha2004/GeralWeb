@@ -27,10 +27,8 @@ body{
     width: 100%;
     clear: both;
     padding-left: 125px;
-   
-    
    }
-  .sale-product .card , .Best-seller .card ,.item .card{
+  .sale-product .card , .Best-seller .card ,.card{
     float: left;
   margin-right: 10px;
   }
@@ -67,11 +65,6 @@ body{
 /* Trang Sản Phẩm */
 .cart_page {
   padding: 75px 0 0 0;
-}
-
-.item {
-  @extend .Best-seller;
-  /* Thuộc tính của item sẽ kế thừa từ Best-seller */
 }
 .select-Item div  {
   width: 100%;
@@ -118,4 +111,10 @@ div.card:hover img {
   padding-top:5px; 
   width:24%;
   display:inline-block;
+}
+div.item{
+  padding-left: 120px;
+}
+.order-step img{
+  color: #fff;
 }
