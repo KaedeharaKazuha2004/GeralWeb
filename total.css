@@ -118,3 +118,14 @@ div.item{
 .order-step img{
   color: #fff;
 }
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f49da0;
+}
+body > .container {
+  padding: 60px 15px;
+}
