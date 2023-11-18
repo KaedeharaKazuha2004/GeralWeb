@@ -32,7 +32,7 @@ body{
     float: left;
   margin-right: 10px;
   }
-  .Best-seller {
+  .Best-seller, .item {
     width: 100%;
     clear: both;
     padding-left: 100px;
@@ -62,11 +62,10 @@ body{
 #tb {
   padding: 10px 10px 10px 10px;
 }
+/* Trang Sản Phẩm */
 .cart_page {
   padding: 75px 0 0 0;
 }
-/* Trang Sản Phẩm */
-
 .select-Item div  {
   width: 100%;
   transition: all 0.25s ease-in-out;
@@ -140,8 +139,8 @@ footer .gotop {
   right:10px;
   z-index:100;
 }
-.item{
+.box-content{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 50px;
+  margin-top: 100px;
 }
