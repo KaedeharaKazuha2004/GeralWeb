@@ -32,7 +32,7 @@ body{
     float: left;
   margin-right: 10px;
   }
-  .Best-seller,.item {
+  .Best-seller {
     width: 100%;
     clear: both;
     padding-left: 100px;
@@ -112,29 +112,36 @@ div.card:hover img {
   width:24%;
   display:inline-block;
 }
-div.item{
-  padding-left: 120px;
-}
 .order-step img{
   color: #fff;
 }
-/* footer */
-#footer{
+#footer {
+  display: flex;
+    
+  left: 0;
+  bottom: 0;
   width: 100%;
 }
-
 #footer .box {
   display: flex;
   justify-content: space-between;
 }
-
+body > .container {
+  padding: 60px 15px;
+}
 #footer .box .incol {
-  display: flex; 
+  display: flex;
   flex-direction: column;
 }
-
-#footer .box .item span:first-child {
-  font-size: 2.2rem;
-  font-weight: 700;
+footer .gotop {
+  position: fixed;
+  bottom: 5px;
+  right:10px;
+  z-index:100;
 }
-
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:70%;
+}
