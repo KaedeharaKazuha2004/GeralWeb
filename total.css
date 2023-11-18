@@ -23,7 +23,7 @@ body{
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
   }
-  .sale-product {
+  .sale-product,.item {
     width: 100%;
     clear: both;
     padding-left: 125px;
@@ -109,30 +109,12 @@ div.card:hover img {
   border:1px solid #ed4190;
   border-radius: 5px;
   padding-top:5px; 
-  width:24%;
   display:inline-block;
-}
-.order-step img{
-  color: #fff;
-}
-#footer {
-  display: flex;
-    
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-#footer .box {
-  display: flex;
-  justify-content: space-between;
 }
 body > .container {
   padding: 60px 15px;
 }
-#footer .box .incol {
-  display: flex;
-  flex-direction: column;
-}
+/* footer */
 footer .gotop {
   position: fixed;
   bottom: 5px;
@@ -141,6 +123,29 @@ footer .gotop {
 }
 .box-content{
   display: flex;
-  margin: 50px;
+  margin: 80px  ;
   margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-step{
+  padding-left: 125px;
+  width:var(--item);
+  padding-left: var(--item);
+  margin-left:var(--item)
+}
+.step{
+  width: var(--card);
+}
+header .home a {
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  font-size: 4rem;
+  color:orange;
+}
+
+header .home a:hover {
+  color:green;
 }
