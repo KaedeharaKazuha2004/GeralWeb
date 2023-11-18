@@ -118,3 +118,23 @@ div.item{
 .order-step img{
   color: #fff;
 }
+/* footer */
+#footer{
+  width: 100%;
+}
+
+#footer .box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer .box .incol {
+  display: flex; 
+  flex-direction: column;
+}
+
+#footer .box .item span:first-child {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
