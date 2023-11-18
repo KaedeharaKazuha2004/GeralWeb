@@ -115,6 +115,9 @@ body > .container {
   padding: 60px 15px;
 }
 /* footer */
+#footer{
+  background-color: rgb(242, 213, 192);
+}
 footer .gotop {
   position: fixed;
   bottom: 5px;
