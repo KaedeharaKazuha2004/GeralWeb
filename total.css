@@ -115,6 +115,9 @@ body > .container {
   padding: 60px 15px;
 }
 /* footer */
+.unorderlist{
+  list-style-type: none; /* Tạo 1 unorderlist không có dấu chấm mặ định */
+}
 #footer{
   background-color: rgb(242, 213, 192);
 }
@@ -132,6 +135,10 @@ footer .gotop {
   justify-content: center;
   align-items: center;
 }
+.detail{
+  text-align: justify ;
+}
+/* Hướng dẫn mua hàng */
 .order-step{
   padding-left: 125px;
   width:var(--item);
@@ -141,6 +148,7 @@ footer .gotop {
 .step{
   width: var(--card);
 }
+/* kí hiệu trở về đầu trang web */
 header .home a {
   position: fixed;
   right: 3%;
