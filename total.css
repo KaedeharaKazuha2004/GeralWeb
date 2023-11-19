@@ -115,6 +115,38 @@ body > .container {
   padding: 60px 15px;
 }
 /* footer */
+.social{
+  display:flex
+}
+.social a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 30px;
+  margin: 4px 5px;
+}
+.social a:hover {
+  scale: 1.2;
+  transition: 0.45s;
+  border: 4px solid #dfb24f;
+}
+.atm img {
+  width: 30%;
+}
+.atm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  gap: 10px;
+}
+.atm-content{
+  text-align: center;
+  margin-bottom: 4px;
+}
 .unorderlist{
   list-style-type: none; /* Tạo 1 unorderlist không có dấu chấm mặ định */
 }
@@ -151,12 +183,12 @@ footer .gotop {
 /* kí hiệu trở về đầu trang web */
 header .home a {
   position: fixed;
-  right: 3%;
-  bottom: 5%;
-  font-size: 4rem;
+  right: 2%;
+  bottom: 3%;
+  font-size: 3rem;
   color:orange;
 }
 
 header .home a:hover {
-  color:green;
+  color:rgb(230, 169, 56);
 }
