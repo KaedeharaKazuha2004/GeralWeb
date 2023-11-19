@@ -115,6 +115,14 @@ body > .container {
   padding: 60px 15px;
 }
 /* footer */
+.unorderlist a{
+  color: black; /* Đặt màu chữ là đen */
+  text-decoration: none; /* Loại bỏ gạch chân */
+}
+.unorderlist a:hover{
+  color: blue;
+  text-decoration:underline;
+}
 .social{
   display:flex
 }
@@ -138,7 +146,7 @@ body > .container {
 .atm {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   width: 300px;
   gap: 10px;
@@ -151,13 +159,7 @@ body > .container {
   list-style-type: none; /* Tạo 1 unorderlist không có dấu chấm mặ định */
 }
 #footer{
-  background-color: rgb(242, 213, 192);
-}
-footer .gotop {
-  position: fixed;
-  bottom: 5px;
-  right:10px;
-  z-index:100;
+  background-color: rgb(246, 222, 205);
 }
 .box-content{
   display: flex;
