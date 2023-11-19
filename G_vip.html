@@ -97,6 +97,23 @@
                 </div>
             </div>
         </div>
+        <div class="chat-icon" onclick="toggleChat()">
+          <i class="fas fa-comment"></i>
+      </div>
+      <div class="chat-box" style="border-radius: 16px;">
+          <div class="chat-header">
+              <h2>Chat với Geral</h2>
+              <span class="close-button" onclick="toggleChat()">&times;</span>
+          </div>
+          <div class="chat-content" id="chat-content">
+              <!-- Tin nhắn sẽ được hiển thị ở đây -->
+          </div>
+          <div class="chat-input">
+              <input type="text" id="message-input" placeholder="Nhập tin nhắn..." style="border-radius: 16px;">
+              <button style="margin: 2px;" onclick="sendMessage()">Gửi</button>
+          </div>
+          <script src="./script.js"></script>
+      </div>
       </main>
       <footer id="footer">
         <div class="container ">
