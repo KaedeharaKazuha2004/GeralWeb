@@ -3,68 +3,75 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="FURNITURE/aboutRegal-page.html">
+    <!-- <link rel="stylesheet" href="FURNITURE/aboutRegal-page.html">
     <link rel="stylesheet" href="FURNITURE/favorite-page.html">
-    <link rel="stylesheet" href="FURNITURE/product-page.htmlget">
-    <link rel="stylesheet" href="FURNITURE/service-page.html">
+    <link rel="stylesheet" href="FURNITURE/product-page.html">
+    <link rel="stylesheet" href="FURNITURE/service-page.html"> -->
     <link rel="stylesheet" href="total.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <script src="./assets/bootstrap-5.3.2-dist/js//bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./assets/fontawesome-free-6.4.2-web/css/all.css">
-    <link rel="short cut icon " href="./images/Logo.png" type="image/vnd.microsoft.icon">
     <title>Geral | Trang Chủ</title>
 </head>
 <body>
-  <header>
-    <div class="home"><a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a></div>
-    <div class="header-container">
-       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="main-page.html">
-                <img src="images/Logo.png" alt="Logo" width="60" height="30"  class="d-inline-block align-text-top">
-              </a>
-              <a class="navbar-brand" href="main-page.html">Home</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Advices</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Product
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./KitchenPage.html">Kitchen</a></li>
-                      <li><a class="dropdown-item" href="./LivingRoomPage.html">Living room</a></li>
-                      <li><a class="dropdown-item" href="./bedroomPage.html">Bed room</a></li>
-                      <li><a class="dropdown-item" href="./workRoom.html">WorkRoom</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Love products</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button id="search" class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                  <a id="themebutton" class="btn btn-outline-success" role="button" href="#"><i class="fa-solid fa-user"></i></a>
-                  <a id="themebutton" class="btn btn-outline-success" role="button" href="cart_page.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                  <a id="themebutton" class="btn btn-outline-success" role="button" href="#"><i class="fa-solid fa-heart"></i></a>
-                </form>
-              </div>
+<!-- phần Header, bao gồm thanh điều hướng, nút đăng ký, đăng nhập, nút tìm kiếm, nút vào giỏ hàng và nút vào các sản phẩm yêu thích -->
+<header>
+  <div class="home"><a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a></div>
+  <div class="header-container">
+     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="main-page.html">
+              <img src="images/Logo.png" alt="Logo" width="60" height="30"  class="d-inline-block align-text-top">
+            </a>
+            <a class="navbar-brand" href="main-page.html">Trang Chủ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sản Phẩm
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./KitchenPage.html">Phòng Bếp</a></li>
+                    <li><a class="dropdown-item" href="./LivingRoomPage.html">Phòng Khách</a></li>
+                    <li><a class="dropdown-item" href="./bedroomPage.html">Phòng Ngủ</a></li>
+                    <li><a class="dropdown-item" href="./workRoom.html">Phòng Làm Việc</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Sản Phẩm Yêu Thích</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dịch Vụ
+                  </a>  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./sale_policy.html">Chính Sách Bán Hàng</a></li>
+                    <li><a class="dropdown-item" href="./ship.html">Chính Sách Giao Hàng & Lắp Đặt</a></li>
+                    <li><a class="dropdown-item" href="./return_Policy.html">Chính Sách Đổi Trả</a></li>
+                    <li><a class="dropdown-item" href="./warrantly.html">Chính Sách Bảo Hành & Bảo Trì</a></li>
+                    <li><a class="dropdown-item" href="./G_vip.html">Khách Hàng Thân Thiết - G.VIP</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="search" class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a id="themebutton" class="btn btn-outline-success" role="button" href="#"><i class="fa-solid fa-user"></i></a>
+                <a id="themebutton" class="btn btn-outline-success" role="button" href="cart_page.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a id="themebutton" class="btn btn-outline-success" role="button" href="#"><i class="fa-solid fa-heart"></i></a>
+              </form>
             </div>
-          </nav>
-    </div>
+          </div>
+        </nav>
+  </div>
 </header>
     <div class="page-body">
+      <!-- phần banner -->
       <img src="images/b77be82c1a64dac9702f92834f291889.gif" class="img-fluid" alt="banner" id="banner">
-
+      <!-- Phần giới thiệu và nút đăng ký -->
       <div class="introduce">
         <h1>Geral furniture</h1>
         <h2>We will bring you a truly comfortable and convenient space</h2>
@@ -72,7 +79,7 @@
         <button style="font-size: 30px; width: 180px; color: #f49da0; margin-left: 10px;" class="btn btn-outline-success" type="submit">Sign in</button>
 
       </div>
-        
+        <!-- Phần xem thêm sản phẩm bằng các khu vực của căn nhà -->
       <div class="container text-center">
                 <div class="row">
           <div style="margin-left: 50px; margin-right: 10px; height: 450px; width: 650px; border:solid 3px #c4c1c1; border-radius: 10px;" class="col-sm-8">
@@ -92,127 +99,88 @@
           </div>
         </div>
       </div>
-        <div id="carouselExample" class="sale-product carousel slide" style=" padding-top: 50px; ">
+      <!-- Phần sản phẩm sale -->
+        <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
           <h2><strong>Sale products</strong></h2>
-          <div class="carousel-inner">
-          <div class="card carousel-item active" style="width: 18rem;">
-            <img src="images/products/phong_lam_viec/ban_2.jpg" class="card-img-top" alt="study-table">
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="./images/products/phong_khach/ghe_sofa_1.jpg" class="card-img-top" alt="sofa">
             <div class="card-body">
-              <h5 class="card-title">table</h5>
-              <p class="card-text">With white tone, you will feel suitable.</p>
+              <h5 class="card-title">Ghế Sofa Gỗ Cao Su Tự Nhiên</h5> 
+              <p class="card-text"><b>9,290,200 VNĐ</b> <strike style="color:#ef683a; font-size: 15px;"> 14.500.000 VNĐ</strike><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
               <a href="#" class="btn btn-primary">Add to cart</a>
             </div>
           </div>
-            <div class="card carousel-item active" style="width: 18rem;">
-              <img src="images/products/phong_lam_viec/ban_2.jpg" class="card-img-top" alt="study-table">
+            <div class="card " style="width: 18rem;margin-top: 20px;">
+              <img src="./images/products/phong_khach/ghe_sofa2.jpg" class="card-img-top" alt="Sofa">
               <div class="card-body">
-                <h5 class="card-title">table</h5>
-                <p class="card-text">With white tone, you will feel suitable.</p>
+                <h5 class="card-title">Ghế Sofa Geral KOGE 701</h5><br>
+                <p class="card-text"><b>9,390,200 VNĐ </b><strike style="color:#ef683a; font-size: 15px;"> 14,240,000 VNĐ</strike><br>
+                  <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(2) <i style="float: right; font-size: 15px;">Đã bán 36</i></p>
                 <a href="#" class="btn btn-primary">Add to cart</a>
               </div>
             </div>
-              <div class="card carousel-item active" style="width: 18rem;">
-                <img src="images/products/phong_lam_viec/ban_2.jpg" class="card-img-top" alt="study-table">
+              <div class="card " style="width: 18rem;margin-top: 20px;">
+                <img src="./images/products/phong_khach/ghe_sofa3.jpg" class="card-img-top" alt="Bộ bàn ăn">
                 <div class="card-body">
-                  <h5 class="card-title">table</h5>
-                  <p class="card-text">With white tone, you will feel suitable.</p>
+                  <h5 class="card-title">Bộ Bàn Trà Gỗ và 4 Ghế Sofa Đơn</h5>
+                  <p class="card-text"><b>6,990,000 VNĐ </b><strike style="color:#ef683a; font-size: 15px;"> 8,160,000 VNĐ</strike><br>
+                    <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(25)<i style="float: right; font-size: 15px;">Đã bán 123</i></p>
                   <a href="#" class="btn btn-primary">Add to cart</a>
                 </div>
               </div>
-
-                <div class="card carousel-item active" style="width: 18rem;">
-                  <img src="images/products/phong_lam_viec/ban_2.jpg" class="card-img-top" alt="study-table">
+                <div class="card " style="width: 18rem;margin-top: 20px;">
+                  <img src="./images/products/phong_khach/ghe_sofa4.jpg" class="card-img-top" alt="Bộ bàn ăn">
                   <div class="card-body">
-                    <h5 class="card-title">table</h5>
-                    <p class="card-text">With white tone, you will feel suitable.</p>
+                    <h5 class="card-title">Bộ Bàn Trà 1 Bàn 3 Ghế </h5><br>
+                    <p class="card-text"><b>3,200,000 VNĐ </b><strike style="color:#ef683a; font-size: 15px;"> 4,500,000 VNĐ</strike><br>
+                      <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(51)<i style="float: right; font-size: 15px;">Đã bán 120</i></p>
                    <a href="#" class="btn btn-primary">Add to cart</a>
                   </div>
                 </div>
-
-                <div class="card carousel-item " style="width: 18rem;">
-                  <img src="images/products/phong_lam_viec/ban_2.jpg" class="card-img-top" alt="study-table">
-                  <div class="card-body">
-                    <h5 class="card-title">table</h5>
-                    <p class="card-text">With white tone, you will feel suitable.</p>
-                   <a href="#" class="btn btn-primary">Add to cart</a>
-                  </div>
-                </div>
-
-                <div class="card carousel-item " style="width: 18rem;">
-                  <img src="images/products/phong_lam_viec/ban_2.jpg" class="card-img-top" alt="study-table">
-                  <div class="card-body">
-                    <h5 class="card-title">table</h5>
-                    <p class="card-text">With white tone, you will feel suitable.</p>
-                   <a href="#" class="btn btn-primary">Add to cart</a>
-                  </div>
-                </div>
-
-                <div class="card carousel-item " style="width: 18rem;">
-                  <img src="images/products/phong_lam_viec/ban_2.jpg" class="card-img-top" alt="study-table">
-                  <div class="card-body">
-                    <h5 class="card-title">table</h5>
-                    <p class="card-text">With white tone, you will feel suitable.</p>
-                   <a href="#" class="btn btn-primary">Add to cart</a>
-                  </div>
-                </div>
-
-                <div class="card carousel-item " style="width: 18rem;">
-                  <img src="images/products/phong_lam_viec/ban_2.jpg" class="card-img-top" alt="study-table">
-                  <div class="card-body">
-                    <h5 class="card-title">table</h5>
-                    <p class="card-text">With white tone, you will feel suitable.</p>
-                   <a href="#" class="btn btn-primary">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-                <button   class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span   class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span  class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-          </div>
-
-          <div class="Best-seller" style="padding-top: 100px; padding-bottom: 100px;">
-            <h2><strong>Best seller</strong></h2>
-            <div class="card" style="width: 18rem;">
-              <img src="images/products/phong_lam_viec/ban_2.jpg" class="card-img-top" alt="study-table">
-              <div class="card-body">
-                <h5 class="card-title">table</h5>
-                <p class="card-text">With white tone, you will feel suitable.</p>
-                <a href="#" class="btn btn-primary">Add to cart</a>
-              </div>
-            </div>
-              <div class="card" style="width: 18rem;">
-                <img src="images/products/phong_lam_viec/ban_2.jpg" class="card-img-top" alt="study-table">
+        </div>      
+   <!-- Phần các sản phẩm bán chạy -->
+            <div style="padding-top: 20px; padding-bottom: 20px;" class="item">
+              <h2><strong>Best seller</strong></h2>
+              <div class="card" style="width: 18rem;margin-top: 20px;">
+                <img src="./images/products/phong_ngu/giuong_1.jpeg" class="card-img-top" alt="Giường Ngủ">
                 <div class="card-body">
-                  <h5 class="card-title">table</h5>
-                  <p class="card-text">With white tone, you will feel suitable.</p>
+                  <h5 class="card-title">Giường Ngủ JAPA Gỗ Cao Su Khung Lắp Ráp G001</h5> 
+                  <p class="card-text"><b>3,120,000 VNĐ </b> <strike style="color:#ef683a; font-size: 15px;"> 3,470,000 VNĐ</strike><br>
+                    <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(2) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
                   <a href="#" class="btn btn-primary">Add to cart</a>
                 </div>
               </div>
-                <div class="card" style="width: 18rem;">
-                  <img src="images/products/phong_lam_viec/ban_2.jpg" class="card-img-top" alt="study-table">
+                <div class="card " style="width: 18rem;margin-top: 20px;">
+                  <img src="./images/products/phong_ngu/giuong_2.jpg" class="card-img-top" alt="Giường Ngủ">
                   <div class="card-body">
-                    <h5 class="card-title">table</h5>
-                    <p class="card-text">With white tone, you will feel suitable.</p>
+                    <h5 class="card-title">Giường Ngủ JAPA Gỗ Cao Su Khung Lắp Ráp G002</h5>
+                    <p class="card-text"><b>3.390.200 VNĐ </b><strike style="color:#ef683a; font-size: 15px;"> 4,240,000 VNĐ</strike><br>
+                      <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star" ></i>(2) <i style="float: right; font-size: 15px;">Đã bán 21</i></p>
                     <a href="#" class="btn btn-primary">Add to cart</a>
                   </div>
                 </div>
-                  <div class="card" style="width: 18rem;">
-                    <img src="images/products/phong_lam_viec/ban_2.jpg" class="card-img-top" alt="study-table">
+                  <div class="card " style="width: 18rem;margin-top: 20px;">
+                    <img src="./images/products/phong_ngu/giuong_9.webp" class="card-img-top" alt="Giường Ngủ">
                     <div class="card-body">
-                      <h5 class="card-title">table</h5>
-                      <p class="card-text">With white tone, you will feel suitable.</p>
-                     <a href="#" class="btn btn-primary">Add to cart</a>
+                      <h5 class="card-title">Giường Ngủ Gỗ Tràm Geral 102</h5>
+                      <p class="card-text"><b>4,990,000 VNĐ </b><br>
+                        <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(25)<i style="float: right; font-size: 15px;">Đã bán 123</i></p>
+                      <a href="#" class="btn btn-primary">Add to cart</a>
                     </div>
                   </div>
-                 
+                    <div class="card " style="width: 18rem;margin-top: 20px;">
+                      <img src="./images/products/phong_ngu/giuong_4.jpg" class="card-img-top" alt="Giường Ngủ">
+                      <div class="card-body">
+                        <h5 class="card-title">Giường Ngủ Gỗ Cao Su Khung Sắt Lắp Ráp G003</h5>
+                        <p class="card-text"><b>3,640,000 VNĐ </b><strike style="color:#ef683a; font-size: 15px;"> 4,050,000 VNĐ</strike><br>
+                          <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(12)<i style="float: right; font-size: 15px;">Đã bán 120</i></p>
+                       <a href="#" class="btn btn-primary">Add to cart</a>
+                      </div>
+                    </div>
             </div>
             <div style="visibility: hidden;" class="d-flex position-relative">
-              
+              <!--Phần giới thiệu giao hàng  -->
               <div>
                 <h5 class="mt-0">Custom component with stretched link</h5>
                 <p style="visibility: hidden;">This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
@@ -232,6 +200,7 @@
             </div>
           </div>
         </div>
+        <!-- Phần chân trang -->
         <footer id="footer">
           <div class="container ">
             <div class="row">
