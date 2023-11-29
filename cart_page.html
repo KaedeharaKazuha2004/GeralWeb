@@ -70,35 +70,39 @@
     </header>
     <main class="cart_page">
       <h1 class="row">
-          <div class="col text-center">MY CART</div>
+          <div class="col text-center">GIỎ HÀNG CỦA TÔI</div>
       </h1>
       <div class="row">
           <div class="col">
               <table class="table container-fluid">
+                <thead>
                   <tr class="text-center">
-                      <th width="400px">Product name</th>
-                      <th width="200px">Price</th>
-                      <th width="150px">Quantity</th>
-                      <th width="200px">Total price</th>
+                      <th width="100px"></th>
+                      <th width="400px">Tên sản phẩm</th>
+                      <th width="200px">Giá</th>
+                      <th width="150px">Số lượng</th>
+                      <th width="200px">Tổng tiền</th>
                       <th width="50px"></th>
                   </tr>
+                </thead>
+                <tbody></tbody>
               </table>
           </div>
       </div>
       <div class="row">
           <div class="col-3">
               <div class="d-flex" style="display:block; margin-left:20px; margin-top:10px;">
-                  <input class="form-control" type="text" placeholder="Enter your coupon code" aria-label="couponcode">
+                  <input class="form-control" type="text" placeholder="Nhập mã giảm giá" aria-label="couponcode">
                   <a href="#" class="btn btn-outline-success" role="button"><i class="fa-solid fa-arrow-right-long"></i></a>
               </div>
           </div>
           <div class="col-5" style="text-align: right;">
               <div id="sum">
-                  <div style="font-size:18px;"><b>Total price:&nbsp&nbsp&nbsp</b><span
+                  <div style="font-size:18px;"><b>Tổng tiền:&nbsp&nbsp&nbsp</b><span
                           id="s"></span>&nbsp&nbsp&nbsp&nbsp</div>
-                  <div style="font-size:18px;"><b>Tax (VAT):&nbsp&nbsp&nbsp </b><span id="vat"></span>&nbsp&nbsp&nbsp
+                  <div style="font-size:18px;"><b>Thuế (VAT):&nbsp&nbsp&nbsp </b><span id="vat"></span>&nbsp&nbsp&nbsp
                   </div>
-                  <div style="font-size:18px;"><b>Total price in cart:&nbsp&nbsp&nbsp</b> <span
+                  <div style="font-size:18px;"><b>Tổng thành tiền các sản phẩm:&nbsp&nbsp&nbsp</b> <span
                           id="total"></span>&nbsp&nbsp&nbsp</div>
               </div>
           </div>
