@@ -163,6 +163,9 @@ body > .container {
 }
 #footer{
   background-color: rgb(246, 222, 205);
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 .box-content{
   display: flex;
