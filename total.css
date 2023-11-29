@@ -217,6 +217,7 @@ body {
   font-size: 24px;
   cursor: pointer;
   padding: 10px;
+  z-index: 100;
 }
 
 .chat-box {
@@ -230,6 +231,7 @@ body {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 .chat-icon:hover{
   transform: scale(1.1);
@@ -330,49 +332,3 @@ body {
     transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
   }
 }
-
-#loader-wrapper .loader-section {
-  position: fixed;
-  top: 0;
-  width: 51%;
-  height: 100%;
-  background: white;
-  z-index: 2000; /* Chrome, Opera 15+, Safari 3.1+ */ /* IE 9 */
-  transform: translateX(0); /* Firefox 16+, IE 10+, Opera */
-}
-
-#loader-wrapper .loader-section.section-left {
-  left: 0;
-}
-
-#loader-wrapper .loader-section.section-right {
-  right: 0;
-}
-
-/* Loaded */
-.loaded #loader-wrapper .loader-section.section-left {
-  /* Chrome, Opera 15+, Safari 3.1+ */ /* IE 9 */
-  transform: translateX(-100%); /* Firefox 16+, IE 10+, Opera */
-  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.loaded #loader-wrapper .loader-section.section-right {
-  /* Chrome, Opera 15+, Safari 3.1+ */ /* IE 9 */
-  transform: translateX(100%); /* Firefox 16+, IE 10+, Opera */
-  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.loaded #loader {
-  opacity: 0;
-  transition: all 0.3s ease-out;
-}
-.loaded #loader-wrapper {
-  visibility: hidden; /* Chrome, Opera 15+, Safari 3.1+ */ /* IE 9 */
-  transform: translateY(-100%); /* Firefox 16+, IE 10+, Opera */
-  transition: all 0.3s 1s ease-out;
-}
-/* JavaScript Turned Off */
-.no-js #loader-wrapper {
-  display: none;
-}
-/*============ Preloader ends ==================================*/
