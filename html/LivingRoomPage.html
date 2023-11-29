@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="FURNITURE/favorite-page.html">
     <link rel="stylesheet" href="FURNITURE/product-page.html">
     <link rel="stylesheet" href="FURNITURE/service-page.html"> -->
-    <link rel="stylesheet" href="total.css">
-    <link rel="stylesheet" href="./assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
-    <script src="./assets/bootstrap-5.3.2-dist/js//bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./assets/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="../total.css">
+    <link rel="stylesheet" href="../assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="../assets/bootstrap-5.3.2-dist/js//bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.4.2-web/css/all.css">
     <title>Geral | Trang Chủ</title>
 </head>
 <body>
@@ -20,10 +20,10 @@
   <div class="header-container">
      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="main-page.html">
-              <img src="images/Logo.png" alt="Logo" width="60" height="30"  class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="../main-page.html">
+              <img src="../images/Logo.png" alt="Logo" width="60" height="30"  class="d-inline-block align-text-top">
             </a>
-            <a class="navbar-brand" href="main-page.html">Trang Chủ</a>
+            <a class="navbar-brand" href="../main-page.html">Trang Chủ</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,7 +41,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Sản Phẩm Yêu Thích</a>
+                  <a class="nav-link active" aria-current="page" href="./favorite-page.html">Sản Phẩm Yêu Thích</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,9 +59,9 @@
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button id="search" class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <a id="themebutton" class="btn btn-outline-success" role="button" href="#"><i class="fa-solid fa-user"></i></a>
-                <a id="themebutton" class="btn btn-outline-success" role="button" href="cart_page.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a id="themebutton" class="btn btn-outline-success" role="button" href="#"><i class="fa-solid fa-heart"></i></a>
+                <a id="themebutton" class="btn btn-outline-success" role="button" href="./login.html"><i class="fa-solid fa-user"></i></a>
+                <a id="themebutton" class="btn btn-outline-success" role="button" href="./cart_page.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a id="themebutton" class="btn btn-outline-success" role="button" href="./favorite-page.html"><i class="fa-solid fa-heart"></i></a>
               </form>
             </div>
           </div>
@@ -69,17 +69,18 @@
   </div>
 </header>
       <main>
-        <img src="./images/main_image/phongkhach.jpg" alt="Phòng khách" style="width: 100%; height: auto; object-fit: cover; " >
+        <img src="../images/main_image/phongkhach.jpg" alt="Phòng khách" style="width: 100%; height: auto; object-fit: cover; " >
 <!--Phần sản phẩm: sử dụng các thẻ div có class là "card" được hỗ trợ bởi boostrap5 để hiển thị từng sản phẩm
 dùng class "item " để hiển thị các sản phẩm thống nhất với nhau-->
 <!--Thẻ s để tạo một nội dung bị gạch ngang, dùng để hiển thị phần giá của sản phẩm trc khi được giảm giá-->
 <!--class "card title", "name-item-font", "card-text", "name-item-font", "btn bnt primary" được hỗ trợ bởi bootstrap5-->
 <!--class "fa fa-star" là icon ngôi sao được thư viện fontawesome cung cấp-->
 <!--Class "btn btn-primary" dùng để tạo nút thêm vào giỏ hàng do Bootstrap cung cấp-->
+<!--Bàn SOfa-Ghế Sofa-->
       <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
           <h2><strong>Bàn Sofa-Ghế Sofa</strong></h2>
           <div class="card " style="width: 18rem;margin-top: 20px;">
-            <img src="./images/products/phong_khach/ghe_sofa_1.jpg" class="card-img-top" alt="sofa">
+            <img src="../images/products/phong_khach/ghe_sofa_1.jpg" class="card-img-top" alt="sofa">
             <div class="card-body">
               <h5 class="card-title">Ghế Sofa Gỗ Cao Su Tự Nhiên</h5> 
               <p class="card-text"><b>9,290,200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 14.500.000 VNĐ</s><br>
@@ -89,7 +90,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
             </div>
           </div>
             <div class="card " style="width: 18rem;margin-top: 20px;">
-              <img src="./images/products/phong_khach/ghe_sofa2.jpg" class="card-img-top" alt="Sofa">
+              <img src="../images/products/phong_khach/ghe_sofa2.jpg" class="card-img-top" alt="Sofa">
               <div class="card-body">
                 <h5 class="card-title">Ghế Sofa Geral KOGE 701</h5><br>
                 <p class="card-text"><b>9,390,200 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 14,240,000 VNĐ</s><br>
@@ -99,7 +100,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               </div>
             </div>
               <div class="card " style="width: 18rem;margin-top: 20px;">
-                <img src="./images/products/phong_khach/ghe_sofa3.jpg" class="card-img-top" alt="Bộ bàn ăn">
+                <img src="../images/products/phong_khach/ghe_sofa3.jpg" class="card-img-top" alt="Bộ bàn ăn">
                 <div class="card-body">
                   <h5 class="card-title">Bộ Bàn Trà Gỗ và 4 Ghế Sofa Đơn</h5>
                   <p class="card-text"><b>6,990,000 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 8,160,000 VNĐ</s><br>
@@ -109,7 +110,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 </div>
               </div>
                 <div class="card " style="width: 18rem;margin-top: 20px;">
-                  <img src="./images/products/phong_khach/ghe_sofa4.jpg" class="card-img-top" alt="Bộ bàn ăn">
+                  <img src="../images/products/phong_khach/ghe_sofa4.jpg" class="card-img-top" alt="Bộ bàn ăn">
                   <div class="card-body">
                     <h5 class="card-title">Bộ Bàn Trà 1 Bàn 3 Ghế </h5><br>
                     <p class="card-text"><b>3,200,000 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 4,500,000 VNĐ</s><br>
@@ -121,7 +122,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
         </div>
         <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
                 <div class="card" style="width: 18rem;margin-top: 20px;">
-                    <img src="./images/products/phong_khach/phong_khach_3.webp" class="card-img-top" alt="sofa">
+                    <img src="../images/products/phong_khach/phong_khach_3.webp" class="card-img-top" alt="sofa">
                     <div class="card-body">
                       <h5 class="card-title">Ghế Sofa Gỗ Tự Nhiên</h5> 
                       <p class="card-text"><b>6,790,200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 11.500.000 VNĐ</s><br>
@@ -131,7 +132,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                     </div>
                 </div>
                   <div class="card" style="width: 18rem;margin-top: 20px;">
-                    <img src="./images/products/phong_khach/phong_khach1.jpg" class="card-img-top" alt="sofa">
+                    <img src="../images/products/phong_khach/phong_khach1.jpg" class="card-img-top" alt="sofa">
                     <div class="card-body">
                       <h5 class="card-title">Ghế Sofa Da Màu Nâu</h5> 
                       <p class="card-text"><b>9,290,200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 14.500.000 VNĐ</s><br>
@@ -141,7 +142,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                     </div>
                   </div>
                 <div class="card" style="width: 18rem;margin-top: 20px;">
-                    <img src="./images/products/phong_khach/phong_khach_2.jpg" class="card-img-top" alt="sofa">
+                    <img src="../images/products/phong_khach/phong_khach_2.jpg" class="card-img-top" alt="sofa">
                     <div class="card-body">
                       <h5 class="card-title">Bàn Sofa Phòng Khách Mặt Kính</h5>
                       <p class="card-text"><b>1,900,200 VNĐ</b><br>
@@ -151,10 +152,11 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                     </div>
                 </div> 
               </div>  
+<!--Kệ TIVI-->
         <div style="padding-top: 20px; padding-bottom: 20px;" class="item">
           <h2><strong>Kệ TiVi</strong></h2>
           <div class="card" style="width: 18rem;margin-top: 20px;">
-            <img src="./images/products/phong_khach/ke_tivi_1.webp" class="card-img-top" alt="Kệ TIVI">
+            <img src="../images/products/phong_khach/ke_tivi_1.webp" class="card-img-top" alt="Kệ TIVI">
             <div class="card-body">
               <h5 class="card-title">Kệ TIVI ACKLEY</h5> <br>
               <p class="card-text"><b>4,950,000 VNĐ</b><br>
@@ -164,7 +166,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
             </div>
           </div> 
         <div class="card" style="width: 18rem;margin-top: 20px;">
-            <img src="./images/products/phong_khach/ke_tivi_2.webp" class="card-img-top" alt="Kệ TIVI">
+            <img src="../images/products/phong_khach/ke_tivi_2.webp" class="card-img-top" alt="Kệ TIVI">
             <div class="card-body">
               <h5 class="card-title">Kệ TIVI CREAT</h5> <br>
               <p class="card-text"><b>4,375,000 VNĐ </b><br>
@@ -174,7 +176,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
             </div>
           </div>
           <div class="card" style="width: 18rem;margin-top: 20px;">
-            <img src="./images/products/phong_khach/ke_tivi_3.webp" class="card-img-top" alt="Kệ TIVI">
+            <img src="../images/products/phong_khach/ke_tivi_3.webp" class="card-img-top" alt="Kệ TIVI">
             <div class="card-body">
               <h5 class="card-title">Kệ TIVI TERRACE</h5> <br>
               <p class="card-text"><b>5,050,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;">7,160,000 VNĐ</s><br>
@@ -184,7 +186,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
             </div>
           </div>
           <div class="card" style="width: 18rem;margin-top: 20px;">
-            <img src="./images/products/phong_khach/ke_tivi_4.webp" class="card-img-top" alt="Kệ TIVI">
+            <img src="../images/products/phong_khach/ke_tivi_4.webp" class="card-img-top" alt="Kệ TIVI">
             <div class="card-body">
               <h5 class="card-title">Kệ TIVI DENNING</h5><br> 
               <p class="card-text"><b>4,600,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;">5,400,000 VNĐ</s><br>
@@ -196,7 +198,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
         </div>
         <div style="padding-top: 20px; padding-bottom: 20px;" class="item">
           <div class="card" style="width: 18rem;margin-top: 20px;">
-            <img src="./images/products/phong_khach/ke_tivi_6.webp" class="card-img-top" alt="Kệ TIVI">
+            <img src="../images/products/phong_khach/ke_tivi_6.webp" class="card-img-top" alt="Kệ TIVI">
             <div class="card-body">
               <h5 class="card-title">Kệ TIVI CAMBRIDGE</h5> <br>
               <p class="card-text"><b>6,280,000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 9,300,000</s><br>
@@ -206,7 +208,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
             </div>
           </div> 
           <div class="card" style="width: 18rem;margin-top: 20px;">
-            <img src="./images/products/phong_khach/ke_tivi_7.jpg" class="card-img-top" alt="Kệ TIVI">
+            <img src="../images/products/phong_khach/ke_tivi_7.jpg" class="card-img-top" alt="Kệ TIVI">
             <div class="card-body">
               <h5 class="card-title">Kệ TIVI Gỗ LEEDS 701</h5> <br>
               <p class="card-text"><b>4,490,000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 6,890,000 VNĐ</s><br>
@@ -216,10 +218,11 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
             </div>
           </div>     
         </div>  
+<!--Kệ Trang Trí-->
         <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
             <h2><strong>Kệ Trang Trí</strong></h2>
             <div class="card" style="width: 18rem;margin-top: 20px;">
-                <img src="./images/products/phong_khach/ke_trang_tri_1.webp" class="card-img-top" alt="Kệ Trang Trí">
+                <img src="../images/products/phong_khach/ke_trang_tri_1.webp" class="card-img-top" alt="Kệ Trang Trí">
                 <div class="card-body">
                   <h5 class="card-title">Kệ Trang Trí HOOPER</h5> <br>
                   <p class="card-text"><b>7,455,000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 10,690,000 VNĐ</s><br>
@@ -229,7 +232,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 </div>
               </div>  
               <div class="card" style="width: 18rem;margin-top: 20px;">
-                <img src="./images/products/phong_khach/ke_trang_tri2.webp" class="card-img-top" alt="Kệ Trang Trí">
+                <img src="../images/products/phong_khach/ke_trang_tri2.webp" class="card-img-top" alt="Kệ Trang Trí">
                 <div class="card-body">
                   <h5 class="card-title">Kệ Trang Trí DUNDEE</h5> <br>
                   <p class="card-text"><b>4,990,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 8,100,000 VNĐ</s><br>
@@ -239,7 +242,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 </div>
               </div> 
               <div class="card" style="width: 18rem;margin-top: 20px;">
-                <img src="./images/products/phong_khach/ke_trang_tri_3.webp" class="card-img-top" alt="Kệ Trang Trí">
+                <img src="../images/products/phong_khach/ke_trang_tri_3.webp" class="card-img-top" alt="Kệ Trang Trí">
                 <div class="card-body">
                   <h5 class="card-title">Kệ Trang Trí SAVANNAH</h5> <br>
                   <p class="card-text"><b>3,560,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 4,450,000 VNĐ</s><br>
@@ -249,7 +252,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 </div>
               </div>  
               <div class="card" style="width: 18rem;margin-top: 20px;">
-                <img src="./images/products/phong_khach/ke_trang_tri_4.webp" class="card-img-top" alt="Kệ Trang Trí">
+                <img src="../images/products/phong_khach/ke_trang_tri_4.webp" class="card-img-top" alt="Kệ Trang Trí">
                 <div class="card-body">
                   <h5 class="card-title">Kệ Trang Trí NEW CITY</h5> <br>
                   <p class="card-text"><b>6,300,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 7,450,000 VNĐ</s><br>
@@ -261,7 +264,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
            </div>
            <div style="padding-top: 20px; padding-bottom: 20px;" class="item">
               <div class="card" style="width: 18rem;margin-top: 20px;">
-                <img src="./images/products/phong_khach/ke_trang_tri_5.webp" class="card-img-top" alt="Kệ Trang Trí">
+                <img src="../images/products/phong_khach/ke_trang_tri_5.webp" class="card-img-top" alt="Kệ Trang Trí">
                 <div class="card-body">
                   <h5 class="card-title">Kệ Trang Trí Geral 4</h5> <br>
                   <p class="card-text"><b>3,790,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 7,580,000 VNĐ</s><br>
@@ -271,10 +274,11 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 </div>
               </div> 
             </div>
+<!--TỦ Giày-->
             <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
             <h2><strong>Tủ Giày-Tủ Trang Trí</strong></h2>
             <div class="card" style="width: 18rem;margin-top: 20px;">
-                <img src="./images/products/phong_khach/tu_giay_1.jpg" class="card-img-top" alt="Tủ Giày">
+                <img src="../images/products/phong_khach/tu_giay_1.jpg" class="card-img-top" alt="Tủ Giày">
                 <div class="card-body">
                   <h5 class="card-title">Tủ Giày Trang Trí Gỗ Geral 1</h5> 
                   <p class="card-text"><b>2,690,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 3,490,000 VNĐ</s><br>
@@ -284,7 +288,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 </div>
               </div>
               <div class="card" style="width: 18rem;margin-top: 20px;">
-                <img src="./images/products/phong_khach/tu_giay_2.jpg" class="card-img-top" alt="Tủ Giày">
+                <img src="../images/products/phong_khach/tu_giay_2.jpg" class="card-img-top" alt="Tủ Giày">
                 <div class="card-body">
                   <h5 class="card-title">Tủ Giày Trang Trí Gỗ Geral 2</h5> 
                   <p class="card-text"><b>3,490,000 VNĐ </b> <br>
@@ -294,7 +298,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 </div>
               </div>
               <div class="card" style="width: 18rem;margin-top: 20px;">
-                <img src="./images/products/phong_khach/tu_giay_3.jpg" class="card-img-top" alt="Tủ Giày">
+                <img src="../images/products/phong_khach/tu_giay_3.jpg" class="card-img-top" alt="Tủ Giày">
                 <div class="card-body">
                   <h5 class="card-title">Tủ Giày Trang Trí Gỗ Geral 3</h5>
                   <p class="card-text"><b>3,890,000 VNĐ </b> <br>
@@ -304,7 +308,7 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 </div>
               </div>
               <div class="card" style="width: 18rem;margin-top: 20px;">
-                <img src="./images/products/phong_khach/tu_giay_4.jpg" class="card-img-top" alt="Tủ Giày">
+                <img src="../images/products/phong_khach/tu_giay_4.jpg" class="card-img-top" alt="Tủ Giày">
                 <div class="card-body">
                   <h5 class="card-title">Tủ Giày Trang Trí Gỗ Geral 4</h5> 
                   <p class="card-text"><b>4,090,000 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 4,490,000 VNĐ</s> <br>
@@ -345,22 +349,22 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <p><i class="fa fa-envelope" aria-hidden="true"></i> cskh@geral.com</p>
               <div class="social">
   <!--các icon mạng xã hội-->
-               <a href="#"  class="facebook" title="Facebook" ><img  class="facebook" src="./images/social_media/facebook.png" alt=""></a>
-               <a href="#" class="instagram" title="Instagram" ><img src="./images/social_media/ingstargam.webp" alt=""></a>
-               <a href="#" class="tiktok" title="Tiktok" ><img src="./images/social_media/tiktok.webp" alt=""></a>
-               <a href="#" class="youtube" title="Youtube" ><img class="youtbe" src="./images/social_media/youtube.webp" alt=""></a>
+               <a href="#"  class="facebook" title="Facebook" ><img  class="facebook" src="../images/social_media/facebook.png" alt=""></a>
+               <a href="#" class="instagram" title="Instagram" ><img src="../images/social_media/ingstargam.webp" alt=""></a>
+               <a href="#" class="tiktok" title="Tiktok" ><img src="../images/social_media/tiktok.webp" alt=""></a>
+               <a href="#" class="youtube" title="Youtube" ><img class="youtbe" src="../images/social_media/youtube.webp" alt=""></a>
               </div>
             </div>
   <!--Các icon thanh toán-->
             <div class="col-sm">
               <h4  class="atm-content">Thanh toán miễn phí</h4>
                 <div class="atm">
-                   <img src="./images/paymentLogo/ATM_logo.png" alt="">
-                   <img src="./images/paymentLogo/logo-jcb.png" alt="">
-                   <img src="./images/paymentLogo/logo-master.png" alt="">
-                   <img src="./images/paymentLogo/logo-samsungpay.png" alt="">
-                   <img src="./images/paymentLogo/logo-visa.png" alt="">
-                   <img src="./images/paymentLogo/logo-vnpay.png" alt="">
+                   <img src="../images/paymentLogo/ATM_logo.png" alt="">
+                   <img src="../images/paymentLogo/logo-jcb.png" alt="">
+                   <img src="../images/paymentLogo/logo-master.png" alt="">
+                   <img src="../images/paymentLogo/logo-samsungpay.png" alt="">
+                   <img src="../images/paymentLogo/logo-visa.png" alt="">
+                   <img src="../images/paymentLogo/logo-vnpay.png" alt="">
                 </div>  
             </div>
           </div>
