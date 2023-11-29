@@ -159,7 +159,7 @@ body > .container {
   margin-bottom: 4px;
 }
 .unorderlist{
-  list-style-type: none; /* Tạo 1 unorderlist không có dấu chấm mặ định */
+  list-style-type: none; /* Tạo 1 unorderlist không có dấu chấm mặc định */
 }
 #footer{
   background-color: rgb(246, 222, 205);
