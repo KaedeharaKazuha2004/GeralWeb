@@ -149,11 +149,12 @@ body > .container {
   gap: 10px;
 }
 .atm-content{
-  text-align: center;
   margin-bottom: 4px;
 }
 .unorderlist{
   list-style-type: none; /* Tạo 1 unorderlist không có dấu chấm mặc định */
+  padding: 0;
+  margin: 0;
 }
 #footer{
   background-color: rgb(246, 222, 205);
