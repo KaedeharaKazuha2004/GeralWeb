@@ -77,10 +77,12 @@ body{
   cursor: pointer; /*di chuột lên tên sản phẩm thì đổi màu tên sản phẩm*/
 }
 .btn-primary {
-  visibility: hidden;
+  visibility: hidden; 
+  /* ẩn nút thêm vào giỏ hàng */
 }
 div.card:hover .btn-primary {
   visibility: visible;
+  /* khi di chuyển chuột vào từ sản phẩm mới hiển thị nút thêm sản phẩm vào giỏ hàng */
 }
 div.card{
   margin:10px;
@@ -95,21 +97,11 @@ div.card:hover {
 }
 div.card:hover .card-body {
   transform: scale(1.1);
+  /* kích thước của 1 sản phẩm sẽ to gấp 1,1 lần ban đầu khi 
+  di chuyển chuột vào thẻ div có class là card chứa sản phẩm */
 }
 div.card:hover img {
   transform: scale(0.95);
-}
-.order-step { 
-  margin-bottom:5px;
-  width:80%; 
-  text-align: center; 
-  margin: 10px;
-}
-.order-step div {
-  border:1px solid #ed4190;
-  border-radius: 5px;
-  padding-top:5px; 
-  display:inline-block;
 }
 body > .container {
   padding: 60px 15px;
@@ -120,12 +112,14 @@ body > .container {
 }
 .unorderlist a{
   color: black; /* Đặt màu chữ là đen */
-  text-decoration: none; /* Loại bỏ gạch chân */
+  text-decoration: none; /* Loại bỏ gạch chân của các link dẫn đến các trang chính sách */
 }
 .unorderlist a:hover{
   color: blue;
   text-decoration:underline;
+  /* khi hover vào list chính sách thì sẽ có màu xanh mà có gạch chân dưới link */
 }
+/* css các icon mạng xã hội: facebook, youtube, instagram, tiktok */
 .social{
   display:flex
 }
@@ -178,34 +172,27 @@ body > .container {
 .detail{
   text-align: justify ;
 }
-/* Hướng dẫn mua hàng */
-.order-step{
-  padding-left: 125px;
-  width:var(--item);
-  padding-left: var(--item);
-  margin-left:var(--item)
-}
-.step{
-  width: var(--card);
-}
 /* kí hiệu trở về đầu trang web */
 header .home a {
-  position: fixed;
+  position: fixed; /* Vị trí cố định: giữ nguyên vị trí của icon ngay cả khi cuộn trang web*/
   right: 2%;
   bottom: 3%;
   font-size: 3rem;
   color:orange;
+  z-index: 100;  /*icon sẽ đè lên tất cả các phần tử trên trang web  */
 }
 
 header .home a:hover {
   color:rgb(230, 169, 56);
 }
+/* Hết phần footer */
+/* css phần body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
-
+/* Css cho icon chức năng chat  */
 .chat-icon {
   position: fixed;
   bottom: 20px;
@@ -219,7 +206,7 @@ body {
   padding: 10px;
   z-index: 100;
 }
-
+/* Css cho chat-box hiển thị ra màn hình khi click vào chat-icon */
 .chat-box {
   display: none;
   position: fixed;
@@ -233,9 +220,11 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 100;
 }
+/* Khi di chuyển chuột lên chat-icon thì icon này sẽ tăng kích cỡ lên 1.1 lần */
 .chat-icon:hover{
   transform: scale(1.1);
 }
+/* css phần header của  icon có class là chat-box */
 .chat-header {
   background-color: rgb(8, 103, 8);
   color: white;
@@ -243,15 +232,17 @@ body {
   text-align: center;
   position: relative;
 }
-
+/* css cho icon có class là close-button */
 .close-button {
   position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
   cursor: pointer;
-}
+  font-size: 30px;
 
+}
+/* css cho khung nhập tin nhắn */
 .chat-content {
   height: 200px;
   overflow-y: scroll;
@@ -267,11 +258,12 @@ body {
   flex: 1;
   padding: 8px;
 }
-
+/* css cho nút gửi tin nhắn */
 .chat-input button {
   padding: 8px;
   background-color:rgb(8, 103, 8);
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
 }
