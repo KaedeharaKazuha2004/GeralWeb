@@ -135,7 +135,7 @@ body > .container {
 .social a:hover {
   scale: 1.2;
   transition: 0.45s;
-  border: 4px solid #dfb24f;
+  border: 4px solid #bd8203;
 }
 .atm img {
   width: 30%;
@@ -184,8 +184,10 @@ header .home a {
 }
 
 header .home a:hover {
-  color:rgb(230, 169, 56);
+  color:green;
+   transform: scale(1.2); 
 }
+
 /* Hết phần footer */
 /* css phần body */
 body {
@@ -198,10 +200,13 @@ body {
   position: fixed;
   bottom: 20px;
   left: 20px;
+  left: 2%;
+  bottom: 3%;
+  margin: 4px 5px;
   background-color: rgb(8, 103, 8);
   color: white;
   border: none;
-  border-radius: 50%;
+  border-radius:60%;
   font-size: 24px;
   cursor: pointer;
   padding: 10px;
@@ -211,7 +216,7 @@ body {
 .chat-box {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 90px;
   left: 20px;
   max-width: 300px;
   background-color: #fff;
@@ -224,6 +229,8 @@ body {
 /* Khi di chuyển chuột lên chat-icon thì icon này sẽ tăng kích cỡ lên 1.1 lần */
 .chat-icon:hover{
   transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: orange;
 }
 /* css phần header của  icon có class là chat-box */
 .chat-header {
@@ -267,4 +274,7 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 4px;
+}
+.chat-input button:hover{
+  background-color: orange;
 }

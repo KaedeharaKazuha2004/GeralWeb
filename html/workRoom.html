@@ -12,11 +12,12 @@
     <script src="../assets/bootstrap-5.3.2-dist/js//bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="short cut icon" href="../images/Logo.png" type="image/vnd.microsoft.icon">
-    <title>Geral | Phòng Làm Việc</title>
+    <title>Geral | Nội Thất Phòng Làm Việc</title>
 </head>
 <body>
 <!-- phần Header, bao gồm thanh điều hướng, nút đăng ký, đăng nhập, nút tìm kiếm, nút vào giỏ hàng và nút vào các sản phẩm yêu thích -->
 <header>
+  <!--icon có class"fa-solid fa-circle-chevron-up" khi nhấn vào sẽ về đầu trang-->
   <div class="home"><a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a></div>
   <div class="header-container">
      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -342,6 +343,25 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
           </div>
         </div>
       </div>
+      <!--icon có chức năng nhắn tin với cửa hàng-->
+<!--chức năng của các hàm Javascript được mô tả trong file total.js-->
+<div class="chat-icon" onclick="toggleChat()">
+  <i class="fas fa-comment"></i>
+</div>
+<div class="chat-box" style="border-radius: 16px;">
+  <div class="chat-header">
+      <h2>Chat với Geral</h2>
+      <span class="close-button" onclick="toggleChat()">&times;</span>
+  </div>
+  <div class="chat-content" id="chat-content">
+      <!-- Tin nhắn sẽ được hiển thị ở đây -->
+  </div>
+  <div class="chat-input">
+      <input type="text" id="message-input" placeholder="Nhập tin nhắn..." style="border-radius: 16px;">
+      <button style="margin: 2px;" onclick="sendMessage()">Gửi</button>
+  </div>
+  <script src="../js/total.js"></script>
+</div>
     </main>
 <!-- Phần chân trang -->
     <footer id="footer", style="display: flex; flex-wrap: wrap;">
