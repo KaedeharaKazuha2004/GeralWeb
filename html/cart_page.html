@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="../assets/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="" href="../images/Logo.png">
     <title>Geral | My Cart</title>
+    <script src="./js/cart.js"></script>
+    <script>
+      window.onload=function(){showCart();};
+    </script>
 </head>
 <body>
   <header>
@@ -76,7 +80,7 @@
           <div class="col">
               <table class="table container-fluid">
                 <thead>
-                  <tr class="text-center">
+                  <tr class="text-center" id="cartDetail">
                       <th width="100px"></th>
                       <th width="400px">Tên sản phẩm</th>
                       <th width="200px">Giá</th>
@@ -99,11 +103,11 @@
           <div class="col-5" style="text-align: right;">
               <div id="sum">
                   <div style="font-size:18px;"><b>Tổng tiền:&nbsp&nbsp&nbsp</b><span
-                          id="s"></span>&nbsp&nbsp&nbsp&nbsp</div>
-                  <div style="font-size:18px;"><b>Thuế (VAT):&nbsp&nbsp&nbsp </b><span id="vat"></span>&nbsp&nbsp&nbsp
+                    id="bill_pre_tax_total"></span>&nbsp&nbsp&nbsp&nbsp</div>
+                  <div style="font-size:18px;"><b>Thuế (VAT):&nbsp&nbsp&nbsp </b><span id="bill_tax"></span>&nbsp&nbsp&nbsp
                   </div>
                   <div style="font-size:18px;"><b>Tổng thành tiền các sản phẩm:&nbsp&nbsp&nbsp</b> <span
-                          id="total"></span>&nbsp&nbsp&nbsp</div>
+                    id="bill_total"></span>&nbsp&nbsp&nbsp</div>
               </div>
           </div>
       </div>

@@ -94,14 +94,55 @@ var itemList = {
 };
 function addCart(code){
     var num = parseInt(document.getElementById(code).value);
-    var name = itemList[code].name;
     if(num == 0) return;
     if(typeof localStorage[code] == "undefined") window.localStorage.setItem(code, num);
     else{
         var current = parseInt(window.localStorage).getItem(code);
         window.localStorage.setItem(code, current + num);
     }
-    alert("Đã cập nhật sản phẩm: " + name + ", số lượng: " + num + ". Số lượng sản phẩm " + name + " đã đặt là: " + parseInt(window.localStorage.getItem(code)) + ".");
+};
+var addCartBtns = document.querySelectorAll(".add-cart");
+addCartBtns.forEach((addCartBtn) => {
+    addCartBtn.addEventListener("click", () => {
+    var div = addCartBtn.parentElement.parentElement;
+    var name = itemList[code].name;
+    var found = itemList.find((item) => {
+        return item.name == name;
+    });
+    addCart(found.code);
+    toast({
+        title: "Success",
+        msg: `Đã thêm  <strong> ${found.name}</strong> vào giỏ hàng!`,
+        type: "success",
+        duration: 3000,
+    });
+    });
+});
+const toast = ({ title = "", msg = "", type, duration = 3000 }) => {
+    const main = document.querySelector(".container.toasts");
+    if (main) {
+      const myToast = document.createElement("div");
+      const icons = {
+        success: "fas fa-check-circle",
+        error: "fas fa-exclamation-circle",
+      };
+  
+      const icon = icons[type];
+      myToast.classList.add("toast1", `toast--${type}`);
+      myToast.innerHTML = `
+        <div class="toast__icon">
+          <i class="${icon}"></i>
+        </div>
+        <div class="toast__body">
+          <h4 class="toast__title">${title}</h4>
+          <p class="toast__msg">${msg}</p>
+      </div>`;
+      main.append(myToast);
+  
+      setTimeout(() => {
+        main.removeChild(myToast);
+      }, duration + 1000);
+    }
 };
 function openCart(){
     window.location.href = "../html/cart_page.html";
@@ -112,9 +153,7 @@ function showCart() {
     container.innerHTML="";
     var sum = 0;
     var totalPreTax = 0;
-    var discountRate = getDiscountRate();
-    var taxRate = 0.1;
-    var discount = 0;
+    var taxRate=0.1;
     var tax = 0;
     for(var i = 0; i < window.localStorage.length; i++){
         if(typeof itemList[localStorage.key(i)] === "undefined") continue;
@@ -138,7 +177,7 @@ function showCart() {
         sum = num*item.price;
         sumCell.innerHTML=formatter.format(sum);
         sumCell.style.textAlign="right";
-        removeLink.innerHTML="<i class='fa fa-trash icon-pink'></i>";
+        removeLink.innerHTML="<i class='fa fa-trash'></i>";
         removeLink.setAttribute("href", "#");
         removeLink.setAttribute("data-code", localStorage.key(i));
         removeLink.onclick=function(){
@@ -155,12 +194,10 @@ function showCart() {
         container.appendChild(tr);
         totalPreTax += sum;
     }
-    var discount= totalPreTax*discountRate;
-    var tax = (totalPreTax-discount)*taxRate;
+    var tax = (totalPreTax)*taxRate;
     document.getElementById("bill_pre_tax_total").innerHTML=formatter.format(totalPreTax);
-    document.getElementById("bill_discount").innerHTML=discountRate+" x A = "+formatter.format(discount);
     document.getElementById("bill_tax").innerHTML=formatter.format(tax);
-    document.getElementById("bill_total").innerHTML=formatter.format(totalPreTax-discount+tax);
+    document.getElementById("bill_total").innerHTML=formatter.format(totalPreTax+tax);
 }
 function removeCart(code) {
     if(typeof window.localStorage[code] !== "undefined"){
