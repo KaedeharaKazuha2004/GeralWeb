@@ -93,60 +93,12 @@ var itemList = {
     "wr5024": {"name": "Tủ 2 Ngăn Có Khóa GTL104", "price": 1390000, "photo": "../images/products/phong_lam_viec/tu_ca_nhan4.jpg"},
 };
 function addCart(code){
-    var num = parseInt(document.getElementById(code).value);
-    if(num == 0) return;
-    if(typeof localStorage[code] == "undefined") window.localStorage.setItem(code, num);
+    if(typeof localStorage[code] == "undefined") window.localStorage.setItem(code, 1);
     else{
-        var current = parseInt(window.localStorage).getItem(code);
-        window.localStorage.setItem(code, current + num);
+        var current = parseInt((window.localStorage).getItem(code));
+        window.localStorage.setItem(code, current + 1);
     }
 };
-var addCartBtns = document.querySelectorAll(".add-cart");
-addCartBtns.forEach((addCartBtn) => {
-    addCartBtn.addEventListener("click", () => {
-    var div = addCartBtn.parentElement.parentElement;
-    var name = itemList[code].name;
-    var found = itemList.find((item) => {
-        return item.name == name;
-    });
-    addCart(found.code);
-    toast({
-        title: "Success",
-        msg: `Đã thêm  <strong> ${found.name}</strong> vào giỏ hàng!`,
-        type: "success",
-        duration: 3000,
-    });
-    });
-});
-const toast = ({ title = "", msg = "", type, duration = 3000 }) => {
-    const main = document.querySelector(".container.toasts");
-    if (main) {
-      const myToast = document.createElement("div");
-      const icons = {
-        success: "fas fa-check-circle",
-        error: "fas fa-exclamation-circle",
-      };
-  
-      const icon = icons[type];
-      myToast.classList.add("toast1", `toast--${type}`);
-      myToast.innerHTML = `
-        <div class="toast__icon">
-          <i class="${icon}"></i>
-        </div>
-        <div class="toast__body">
-          <h4 class="toast__title">${title}</h4>
-          <p class="toast__msg">${msg}</p>
-      </div>`;
-      main.append(myToast);
-  
-      setTimeout(() => {
-        main.removeChild(myToast);
-      }, duration + 1000);
-    }
-};
-function openCart(){
-    window.location.href = "../html/cart_page.html";
-}
 function showCart() {
     var formatter = new Intl.NumberFormat("vi-VN", {style: "currency", currency: "VND"});
     var container = document.getElementById("cartDetail").getElementsByTagName("tbody")[0];

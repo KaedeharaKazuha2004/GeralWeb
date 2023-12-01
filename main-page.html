@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="./assets/fontawesome-free-6.4.2-web/css/all.css">
     <title>Geral | Trang Chủ</title>
     <script src="./js/cart.js"></script>
-    <script>
-      window.onload=function(){showCart();};
-    </script>
 </head>
 <body>
 <!-- phần Header, bao gồm thanh điều hướng, nút đăng ký, đăng nhập, nút tìm kiếm, nút vào giỏ hàng và nút vào các sản phẩm yêu thích -->
@@ -112,7 +109,7 @@
               <h5 class="card-title">Ghế Sofa Gỗ Cao Su Tự Nhiên</h5> 
               <p class="card-text"><b>9,290,200 VNĐ</b> <strike style="color:#ef683a; font-size: 15px;"> 14.500.000 VNĐ</strike><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
-              <a class="btn btn-primary add-cart">Add to cart</a>
+              <a class="btn btn-primary" onclick="addCart('sp0001')">Add to cart</a>
               <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div>
@@ -122,7 +119,7 @@
                 <h5 class="card-title">Ghế Sofa Geral KOGE 701</h5><br>
                 <p class="card-text"><b>9,390,200 VNĐ </b><strike style="color:#ef683a; font-size: 15px;"> 14,240,000 VNĐ</strike><br>
                   <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(2) <i style="float: right; font-size: 15px;">Đã bán 36</i></p>
-                <a class="btn btn-primary add-cart">Add to cart</a>
+                <a class="btn btn-primary" onclick="addCart('sp0002')">Add to cart</a>
                 <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
               </div>
             </div>
@@ -132,7 +129,7 @@
                   <h5 class="card-title">Bộ Bàn Trà Gỗ và 4 Ghế Sofa Đơn</h5>
                   <p class="card-text"><b>6,990,000 VNĐ </b><strike style="color:#ef683a; font-size: 15px;"> 8,160,000 VNĐ</strike><br>
                     <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(25)<i style="float: right; font-size: 15px;">Đã bán 123</i></p>
-                  <a class="btn btn-primary add-cart">Add to cart</a>
+                  <a class="btn btn-primary" onclick="addCart('sp0003')">Add to cart</a>
                   <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
                 </div>
               </div>
@@ -142,7 +139,7 @@
                     <h5 class="card-title">Bộ Bàn Trà 1 Bàn 3 Ghế </h5><br>
                     <p class="card-text"><b>3,200,000 VNĐ </b><strike style="color:#ef683a; font-size: 15px;"> 4,500,000 VNĐ</strike><br>
                       <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(51)<i style="float: right; font-size: 15px;">Đã bán 120</i></p>
-                   <a class="btn btn-primary add-cart">Add to cart</a>
+                   <a class="btn btn-primary" onclick="addCart('sp0004')">Add to cart</a>
                    <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
                   </div>
                 </div>
@@ -156,7 +153,7 @@
                   <h5 class="card-title">Giường Ngủ JAPA Gỗ Cao Su Khung Lắp Ráp G001</h5> 
                   <p class="card-text"><b>3,120,000 VNĐ </b> <strike style="color:#ef683a; font-size: 15px;"> 3,470,000 VNĐ</strike><br>
                     <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(2) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
-                  <a class="btn btn-primary add-cart">Add to cart</a>
+                  <a class="btn btn-primary" onclick="addCart('bs1001')">Add to cart</a>
                   <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
                 </div>
               </div>
@@ -166,7 +163,7 @@
                     <h5 class="card-title">Giường Ngủ JAPA Gỗ Cao Su Khung Lắp Ráp G002</h5>
                     <p class="card-text"><b>3.390.200 VNĐ </b><strike style="color:#ef683a; font-size: 15px;"> 4,240,000 VNĐ</strike><br>
                       <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star" ></i>(2) <i style="float: right; font-size: 15px;">Đã bán 21</i></p>
-                    <a class="btn btn-primary add-cart">Add to cart</a>
+                    <a class="btn btn-primary" onclick="addCart('bs1002')">Add to cart</a>
                     <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
                   </div>
                 </div>
@@ -176,7 +173,7 @@
                       <h5 class="card-title">Giường Ngủ Gỗ Tràm Geral 102</h5>
                       <p class="card-text"><b>4,990,000 VNĐ </b><br>
                         <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(25)<i style="float: right; font-size: 15px;">Đã bán 123</i></p>
-                      <a class="btn btn-primary add-cart">Add to cart</a>
+                      <a class="btn btn-primary" onclick="addCart('bs1003')">Add to cart</a>
                       <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
                     </div>
                   </div>
@@ -186,7 +183,7 @@
                         <h5 class="card-title">Giường Ngủ Gỗ Cao Su Khung Sắt Lắp Ráp G003</h5>
                         <p class="card-text"><b>3,640,000 VNĐ </b><strike style="color:#ef683a; font-size: 15px;"> 4,050,000 VNĐ</strike><br>
                           <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(12)<i style="float: right; font-size: 15px;">Đã bán 120</i></p>
-                       <a class="btn btn-primary add-cart">Add to cart</a>
+                       <a class="btn btn-primary" onclick="addCart('bs1004')">Add to cart</a>
                        <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
                       </div>
                     </div>
@@ -255,6 +252,5 @@
             </div>
           </div>
         </footer>
-
 </body>
 </html>
