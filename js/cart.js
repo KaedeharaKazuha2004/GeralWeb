@@ -93,10 +93,20 @@ var itemList = {
     "wr5024": {"name": "Tủ 2 Ngăn Có Khóa GTL104", "price": 1390000, "photo": "../images/products/phong_lam_viec/tu_ca_nhan4.jpg"},
 };
 function addCart(code){
+    var name=itemList[code].name;
     if(typeof localStorage[code] == "undefined") window.localStorage.setItem(code, 1);
     else{
         var current = parseInt((window.localStorage).getItem(code));
         window.localStorage.setItem(code, current + 1);
+    }
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLive = document.getElementById('liveToast')
+
+    if (toastTrigger) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLive)
+        toastTrigger.addEventListener('click', () => {
+            toastBootstrap.show()
+        })
     }
 };
 function showCart() {
@@ -122,13 +132,14 @@ function showCart() {
         photoCell.style.textAlign="center";
         photoCell.innerHTML="<img src='" + item.photo + "' class='round-figure' width='100px' />";
         nameCell.innerHTML=item.name;
+        nameCell.style.textAlign="center";
         priceCell.innerHTML=formatter.format(item.price);
-        priceCell.style.textAlign="right";
+        priceCell.style.textAlign="center";
         numCell.innerHTML=num;
-        numCell.style.textAlign="right";
+        numCell.style.textAlign="center";
         sum = num*item.price;
         sumCell.innerHTML=formatter.format(sum);
-        sumCell.style.textAlign="right";
+        sumCell.style.textAlign="center";
         removeLink.innerHTML="<i class='fa fa-trash'></i>";
         removeLink.setAttribute("href", "#");
         removeLink.setAttribute("data-code", localStorage.key(i));
