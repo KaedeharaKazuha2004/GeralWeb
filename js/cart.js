@@ -99,16 +99,9 @@ function addCart(code){
         var current = parseInt((window.localStorage).getItem(code));
         window.localStorage.setItem(code, current + 1);
     }
-    const toastTrigger = document.getElementById('liveToastBtn')
-    const toastLive = document.getElementById('liveToast')
-
-    if (toastTrigger) {
-        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLive)
-        toastTrigger.addEventListener('click', () => {
-            toastBootstrap.show()
-        })
-    }
+    
 };
+
 function showCart() {
     var formatter = new Intl.NumberFormat("vi-VN", {style: "currency", currency: "VND"});
     var container = document.getElementById("cartDetail").getElementsByTagName("tbody")[0];
