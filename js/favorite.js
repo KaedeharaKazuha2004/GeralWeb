@@ -142,13 +142,15 @@ function showFavorite() {
 function removeFavorite(code) {
 // Khai báo biến name lấy giá trị là name dưới dạng chuỗi của mã sản phẩm tương ứng với biến code
     var name=itemList[code].name;
-    if(typeof window.localStorage[code] !== "undefined"){
+    if(confirm("Bạn có chắc chắn muốn xóa sản phẩm " + name + " khỏi mục yêu thích không? Nhấn OK để xác nhận xóa hoặc nhấn Cancel để hủy")){
+        if(typeof window.localStorage[code] !== "undefined"){
 // Xóa sản phẩm khỏi localStorage
-        window.localStorage.removeItem(code);
+            window.localStorage.removeItem(code);
 // Xóa nội dung của phần thân của bảng (<tbody>)
-        document.getElementById("favoriteDetail").getElementsByTagName("tbody")[0].innerHTML="";
+            document.getElementById("favoriteDetail").getElementsByTagName("tbody")[0].innerHTML="";
 // Hiển thị lại nội dung của trang yêu thích
-        showFavorite();
+            showFavorite();
+        }
+        alert("Đã xóa sản phẩm " + name + " khỏi mục yêu thích thành công!");
     }
-    alert("Đã xóa sản phẩm " + name + " khỏi mục yêu thích thành công!");
 }
