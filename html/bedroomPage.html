@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../assets/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="short cut icon" href="../images/Logo.png" type="image/vnd.microsoft.icon">
     <title>Geral | Nội Thất Phòng Ngủ</title>
+    <script src="../js/cart.js" defer></script>
+    <script src="../js/favorite.js" defer></script>
 </head>
 <body>
 <!-- phần Header, bao gồm thanh điều hướng, nút đăng ký, đăng nhập, nút tìm kiếm, nút vào giỏ hàng và nút vào các sản phẩm yêu thích -->
@@ -59,11 +61,11 @@
                 </li>
               </ul>
               <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
                 <button id="search" class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <a id="themebutton" class="btn btn-outline-success" role="button" href="html/signin.html"><i class="fa-solid fa-user"></i></a>
-                <a id="themebutton" class="btn btn-outline-success" role="button" href="html/cart_page.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a id="themebutton" class="btn btn-outline-success" role="button" href="html/favorite-page.html"><i class="fa-solid fa-heart"></i></a>
+                <a id="themebutton" class="btn btn-outline-success" role="button" href="./signin.html"><i class="fa-solid fa-user"></i></a>
+                <a id="themebutton" class="btn btn-outline-success" role="button" href="./cart_page.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a id="themebutton" class="btn btn-outline-success" role="button" href="./favorite-page.html"><i class="fa-solid fa-heart"></i></a>
               </form>
             </div>
           </div>
@@ -88,8 +90,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Giường Ngủ JAPA Gỗ Cao Su Khung Lắp Ráp G001</h5> 
               <p class="card-text"><b>3,120,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 3,470,000 VNĐ</s><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(2) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('bs1001')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('bs1001')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div>
             <div class="card " style="width: 18rem;margin-top: 20px;">
@@ -98,8 +100,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 <h5 class="card-title">Giường Ngủ JAPA Gỗ Cao Su Khung Lắp Ráp G002</h5>
                 <p class="card-text"><b>3.390.200 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 4,240,000 VNĐ</s><br>
                   <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star" ></i>(2) <i style="float: right; font-size: 15px;">Đã bán 21</i></p>
-                <a href="#" class="btn btn-primary">Add to cart</a>
-                <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                <a href="#" class="btn btn-primary" onclick="addCart('bs1002')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('bs1002')"><i class="fa-regular fa-heart fa-lg"></i></a>
               </div>
             </div>
               <div class="card " style="width: 18rem;margin-top: 20px;">
@@ -108,8 +110,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                   <h5 class="card-title">Giường Ngủ Gỗ Tràm Geral 102</h5>
                   <p class="card-text"><b>4,990,000 VNĐ </b><br>
                     <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(25)<i style="float: right; font-size: 15px;">Đã bán 123</i></p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                  <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                  <a href="#" class="btn btn-primary" onclick="addCart('bs1003')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('bs1003')"><i class="fa-regular fa-heart fa-lg"></i></a>
                 </div>
               </div>
                 <div class="card " style="width: 18rem;margin-top: 20px;">
@@ -118,8 +120,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                     <h5 class="card-title">Giường Ngủ Gỗ Cao Su Khung Sắt Lắp Ráp G003</h5>
                     <p class="card-text"><b>3,640,000 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 4,050,000 VNĐ</s><br>
                       <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(12)<i style="float: right; font-size: 15px;">Đã bán 120</i></p>
-                   <a href="#" class="btn btn-primary">Add to cart</a>
-                   <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                   <a href="#" class="btn btn-primary" onclick="addCart('bs1004')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                   <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('bs1004')"><i class="fa-regular fa-heart fa-lg"></i></a>
                   </div>
                 </div>
         </div>
@@ -130,8 +132,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                       <h5 class="card-title">Giường Ngủ Gỗ Tự Nhiên  </h5><br>
                       <p class="card-text"><b>4,790,200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 8.500.000 VNĐ</s><br>
                         <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange " ></i>(30) <i style="float: right; font-size: 15px;">Đã bán 141</i></p>
-                      <a href="#" class="btn btn-primary">Add to cart</a>
-                      <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                      <a href="#" class="btn btn-primary" onclick="addCart('b4001')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                      <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4001')"><i class="fa-regular fa-heart fa-lg"></i></a>
                     </div>
                 </div>
                   <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -140,8 +142,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                       <h5 class="card-title">Giường Tầng Gỗ Cao Su Khung Sắt Lắp Ráp</h5>
                       <p class="card-text"><b>10,200,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 11.500.000 VNĐ</s><br>
                         <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(4) <i style="float: right; font-size: 15px;">Đã bán 23</i></p>
-                      <a href="#" class="btn btn-primary">Add to cart</a>
-                      <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                      <a href="#" class="btn btn-primary" onclick="addCart('b4002')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                      <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4002')"><i class="fa-regular fa-heart fa-lg"></i></a>
                     </div>
                   </div>
                 <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -150,8 +152,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                       <h5 class="card-title">Giường Tầng Gỗ Cao SU 140x200cm Khung Sắt</h5>
                       <p class="card-text"><b>10,900,000 VNĐ</b><br>
                         <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(34) <i style="float: right; font-size: 15px;">Đã bán 152</i></p>
-                      <a href="#" class="btn btn-primary">Add to cart</a>
-                      <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                      <a href="#" class="btn btn-primary" onclick="addCart('b4003')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                      <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4003')"><i class="fa-regular fa-heart fa-lg"></i></a>
                     </div>
                 </div> 
               </div> 
@@ -164,8 +166,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Tủ Quần Áo Gỗ G001</h5> <br>
               <p class="card-text"><b>3,490,000 VNĐ</b><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(7) <i style="float: right; font-size: 15px;">Đã bán 65</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4004')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4004')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div> 
         <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -174,8 +176,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Tủ Quần Áo Gỗ 3 Cánh Cửa G002</h5> 
               <p class="card-text"><b>8,900,000 VNĐ </b><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(21) <i style="float: right; font-size: 15px;">Đã bán 92</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4005')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4005')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div>
           <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -184,8 +186,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Tủ Quần Áo Gỗ 4 Cánh Cửa</h5>
               <p class="card-text"><b>11,970,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;">16,460,000 VNĐ</s><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange " ></i>(21) <i style="float: right; font-size: 15px;">Đã bán 79</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4006')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4006')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div>
           <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -194,8 +196,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Tủ Quần Áo Liền Kệ Trang Trí</h5>
               <p class="card-text"><b>7,300,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;">9,000,000 VNĐ</s><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(35) <i style="float: right; font-size: 15px;">Đã bán 125</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4007')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4007')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div>
         </div>
@@ -206,8 +208,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Module Tủ Quần Áo Hiện Đại Gỗ Cao Su Tự Nhiên</h5> 
               <p class="card-text"><b>11,280,000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 14,300,000</s><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(10) <i style="float: right; font-size: 15px;">Đã bán 73</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4008')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4008')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div> 
           <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -216,8 +218,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Module Tủ Quần Áo Kết Hợp Kệ Trang Trí</h5>
               <p class="card-text"><b>9,490,000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 10,890,000 VNĐ</s><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(22) <i style="float: right; font-size: 15px;">Đã bán 67</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4009')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4009')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div>
           <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -226,8 +228,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Giá Kệ Treo Quần Áo Gỗ Cao Su Khung Sắt</h5>
               <p class="card-text"><b>2,600,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 2,890,000 VNĐ</s><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(68) <i style="float: right; font-size: 15px;">Đã bán 341</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4010')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4010')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div>
           <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -236,8 +238,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Module Tủ Quần Áo 2m Kết Hợp Kệ Trang Trí</h5>
               <p class="card-text"><b>15,490,000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 17,890,000 VNĐ</s><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(38) <i style="float: right; font-size: 15px;">Đã bán 71</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4011')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4011')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div>
         </div>
@@ -248,8 +250,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Tủ Quần Áo Nhỏ Gọn 2 Cánh Cửa</h5>
               <p class="card-text"><b>4,190,000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 9,890,000 VNĐ</s><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(20) <i style="float: right; font-size: 15px;">Đã bán 77</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4012')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4012')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div>
         </div>     
@@ -262,8 +264,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                   <h5 class="card-title">Bàn Trang Điểm Gỗ Màu Tự Nhiên GTD101</h5>
                   <p class="card-text"><b>3,990,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 5,490,000 VNĐ</s><br>
                     <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(19) <i style="float: right; font-size: 15px;">Đã bán 233</i></p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                  <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                  <a href="#" class="btn btn-primary" onclick="addCart('b4013')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4013')"><i class="fa-regular fa-heart fa-lg"></i></a>
                 </div>
               </div>  
               <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -272,8 +274,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                   <h5 class="card-title">Bàn Trang Điểm Gỗ Đa Năng Màu Nâu GTD101</h5>
                   <p class="card-text"><b>3,990,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;">5,490,000 VNĐ</s><br>
                     <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(23) <i style="float: right; font-size: 15px;">Đã bán 117</i></p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                  <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                  <a href="#" class="btn btn-primary" onclick="addCart('b4014')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4014')"><i class="fa-regular fa-heart fa-lg"></i></a>
                 </div>
               </div> 
               <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -282,8 +284,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                   <h5 class="card-title">Bàn Trang Điểm Gỗ Cao Su Kèm Gương GTD102</h5>
                   <p class="card-text"><b>2,960,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 3,450,000 VNĐ</s><br>
                     <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(3) <i style="float: right; font-size: 15px;">Đã bán 46 </i></p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                  <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                  <a href="#" class="btn btn-primary" onclick="addCart('b4015')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4015')"><i class="fa-regular fa-heart fa-lg"></i></a>
                 </div>
               </div>  
               <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -292,8 +294,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                   <h5 class="card-title">Bàn Trang Điểm Kèm Gương Đèn Led GTD103 </h5>
                   <p class="card-text"><b>3,600,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 3,690,000 VNĐ</s><br>
                     <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(12) <i style="float: right; font-size: 15px;">Đã bán 75</i></p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                  <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                  <a href="#" class="btn btn-primary" onclick="addCart('b4016')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                  <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4016')"><i class="fa-regular fa-heart fa-lg"></i></a>
                 </div>
               </div>  
         </div> 
@@ -304,8 +306,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 <h5 class="card-title">Bàn Trang Điểm 2 Hộc Kéo Chân Sắt GTD104</h5>
                 <p class="card-text"><b>2,100,000 VNĐ</b><br>
                   <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(75) <i style="float: right; font-size: 15px;">Đã bán 432</i></p>
-                <a href="#" class="btn btn-primary">Add to cart</a>
-                <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                <a href="#" class="btn btn-primary" onclick="addCart('b4017')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4017')"><i class="fa-regular fa-heart fa-lg"></i></a>
               </div>
             </div>  
             <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -314,8 +316,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 <h5 class="card-title">Bàn Trang Điểm Kết Hợp Chân Tủ Đựng Đồ GTD105</h5>
                 <p class="card-text"><b>5,590,000 VNĐ </b> <s style="color:#ef683a; font-size: 15px;"> 6,100,000 VNĐ</s><br>
                   <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(54) <i style="float: right; font-size: 15px;">Đã bán 291</i></p>
-                <a href="#" class="btn btn-primary">Add to cart</a>
-                <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                <a href="#" class="btn btn-primary" onclick="addCart('b4018')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4018')"><i class="fa-regular fa-heart fa-lg"></i></a>
               </div>
             </div> 
             <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -324,8 +326,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 <h5 class="card-title">Bàn Trang Điểm Gỗ Basic Có 2 Ngăn Kéo GTD106</h5> 
                 <p class="card-text"><b>2,660,000 VNĐ </b><br>
                   <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(3) <i style="float: right; font-size: 15px;">Đã bán 75</i></p>
-                <a href="#" class="btn btn-primary">Add to cart</a>
-                <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                <a href="#" class="btn btn-primary" onclick="addCart('b4019')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4019')"><i class="fa-regular fa-heart fa-lg"></i></a>
               </div>
             </div>  
             <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -334,8 +336,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
                 <h5 class="card-title">Bàn Trang Điểm Có Chân Tủ Gỗ Cao Su GTD107</h5> 
                 <p class="card-text"><b>4,600,000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 5,000,000 VNĐ</s><br>
                   <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(31) <i style="float: right; font-size: 15px;">Đã bán 210</i></p>
-                <a href="#" class="btn btn-primary">Add to cart</a>
-                <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+                <a href="#" class="btn btn-primary" onclick="addCart('b4020')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4020')"><i class="fa-regular fa-heart fa-lg"></i></a>
               </div>
             </div>  
       </div> 
@@ -346,8 +348,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">COMBO Bàn Ghế Trang Điểm Góc Tường GTD108</h5>
               <p class="card-text"><b>3,900,000 VNĐ</b><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(2) <i style="float: right; font-size: 15px;">Đã bán 59</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4021')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4021')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div> 
         <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -356,8 +358,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Bàn Trang Điểm Nhỏ Gọn Bằng Gỗ GTD109</h5>
               <p class="card-text"><b>2,730,000 VNĐ</b><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(55) <i style="float: right; font-size: 15px;">Đã bán 165</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4022')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4022')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div>
       </div>
@@ -370,8 +372,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Tủ Đầu Giường OTEGO</h5>
               <p class="card-text"><b>2,100,000 VNĐ</b><s style="color:#ef683a; font-size: 15px;"> 4,200,000 VNĐ</s><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(2) <i style="float: right; font-size: 15px;">Đã bán 35</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4023')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4023')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div> 
         <div class="card" style="width: 18rem;margin-top: 20px;">
@@ -380,8 +382,8 @@ dùng class "item " để hiển thị các sản phẩm thống nhất với nh
               <h5 class="card-title">Tủ Đầu Giường INDUSTRY </h5>
               <p class="card-text"><b>2,330,000 VNĐ </b><s style="color:#ef683a; font-size: 15px;"> 4,600,000 VNĐ</s><br>
                 <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 65</i></p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-              <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+              <a href="#" class="btn btn-primary" onclick="addCart('b4024')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('b4024')"><i class="fa-regular fa-heart fa-lg"></i></a>
             </div>
           </div>
       </div>

@@ -9,20 +9,20 @@ function toggleChat() {
 // hàm sendMessage có công dụng thêm một tin nhắn mới vào cuộc trò chuyện 
 // khi người dùng nhập và nhấn "Gửi".
 function sendMessage() {
-    var messageInput = document.getElementById("message-input");
-    var chatContent = document.getElementById("chat-content");
-
-    var messageText = messageInput.value.trim();
-
+    var messageInput = document.getElementById("message-input"); // Lấy phần tử có id là "message-input"
+    var chatContent = document.getElementById("chat-content"); // lấy phần tử có id là "chat-content"
+// Lấy giá trị của phần tử đầu vào (tức là nội dung tin nhắn) và loại bỏ khoảng trắng ở đầu và cuối chuỗi.
+    var messageText = messageInput.value.trim(); 
     if (messageText !== "") {
+//Tạo một phần tử <div> mới với class là "message" và đặt nội dung của phần tử này là nội dung tin nhắn.
         var messageElement = document.createElement("div");
         messageElement.className = "message";
         messageElement.innerText = messageText;
-
+//Thêm phần tử tin nhắn mới vào cuộc trò chuyện và cuộn xuống cuối cùng để hiển thị tin nhắn mới nhất.
         chatContent.appendChild(messageElement);
         chatContent.scrollTop = chatContent.scrollHeight;
 
-        // Reset input
+// Đặt lại giá trị của phần tử đầu vào sau khi tin nhắn đã được gửi đi để người dùng có thể nhập tin nhắn mới.
         messageInput.value = "";
     }
 }
