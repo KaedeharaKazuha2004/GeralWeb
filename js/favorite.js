@@ -92,81 +92,52 @@ var itemList = {
     "wr5023": {"name": "Tủ Cá Nhân Di Động Gỗ Tự Nhiên GTL103", "price": 2790000, "photo": "../images/products/phong_lam_viec/tu_ca_nhan3.jpg"},
     "wr5024": {"name": "Tủ 2 Ngăn Có Khóa GTL104", "price": 1390000, "photo": "../images/products/phong_lam_viec/tu_ca_nhan4.jpg"},
 };
-function addCart(code){
+function addFavorite(code){
     var name=itemList[code].name;
     if(typeof localStorage[code] == "undefined") window.localStorage.setItem(code, 1);
-    else{
-        var current = parseInt((window.localStorage).getItem(code));
-        window.localStorage.setItem(code, current + 1);
-    }
-    alert("Đã thêm sản phẩm " + name + " vào giỏ hàng thành công!");
+    alert("Đã thêm sản phẩm " + name + " vào mục yêu thích thành công!");
 };
 
-function showCart() {
+function showFavorite() {
     var formatter = new Intl.NumberFormat("vi-VN", {style: "currency", currency: "VND"});
-    var container = document.getElementById("cartDetail").getElementsByTagName("tbody")[0];
+    var container = document.getElementById("favoriteDetail").getElementsByTagName("tbody")[0];
     container.innerHTML="";
-    var sum = 0;
-    var totalPreTax = 0;
-    var taxRate=0.1;
-    var tax = 0;
     for(var i = 0; i < window.localStorage.length; i++){
         if(typeof itemList[localStorage.key(i)] === "undefined") continue;
         var tr = document.createElement("tr");
         var photoCell = document.createElement("td");
         var nameCell = document.createElement("td");
         var priceCell = document.createElement("td");
-        var numCell = document.createElement("td");
-        var sumCell = document.createElement("td");
         var removeCell = document.createElement("td");
         var removeLink = document.createElement("a");
         var item = itemList[localStorage.key(i)];
-        var num = localStorage.getItem(localStorage.key(i));
         photoCell.style.textAlign="center";
         photoCell.innerHTML="<img src='" + item.photo + "' class='round-figure' width='100px' />";
         nameCell.innerHTML=item.name;
         nameCell.style.textAlign="center";
         priceCell.innerHTML=formatter.format(item.price);
         priceCell.style.textAlign="center";
-        numCell.innerHTML=num;
-        numCell.style.textAlign="center";
-        sum = num*item.price;
-        sumCell.innerHTML=formatter.format(sum);
-        sumCell.style.textAlign="center";
         removeLink.innerHTML="<i class='fa fa-trash'></i>";
         removeLink.setAttribute("href", "#");
         removeLink.setAttribute("data-code", localStorage.key(i));
         removeLink.onclick=function(){
-            removeCart(this.dataset.code);
+            removeFavorite(this.dataset.code);
         };
         removeCell.style.textAlign="center";
         removeCell.appendChild(removeLink);
         tr.appendChild(photoCell);
         tr.appendChild(nameCell);
-        tr.appendChild(numCell);
         tr.appendChild(priceCell);
-        tr.appendChild(sumCell);
         tr.appendChild(removeCell);
         container.appendChild(tr);
-        totalPreTax += sum;
     }
-    var tax = (totalPreTax)*taxRate;
-    document.getElementById("bill_pre_tax_total").innerHTML=formatter.format(totalPreTax);
-    document.getElementById("bill_tax").innerHTML=formatter.format(tax);
-    document.getElementById("bill_total").innerHTML=formatter.format(totalPreTax+tax);
 }
-function removeCart(code) {
+function removeFavorite(code) {
     var name=itemList[code].name;
     if(typeof window.localStorage[code] !== "undefined"){
         window.localStorage.removeItem(code);
-        document.getElementById("cartDetail").getElementsByTagName("tbody")[0].innerHTML="";
-        showCart();
+        document.getElementById("favoriteDetail").getElementsByTagName("tbody")[0].innerHTML="";
+        showFavorite();
     }
-    alert("Đã xóa sản phẩm " + name + " khỏi giỏ hàng thành công!");
-}
-
-function confirmPurchase(){
-    if (confirm("Vui lòng kiểm tra lại thông tin giao hàng cũng như đơn hàng trước khi đặt hàng. Sau khi kiểm tra, vui lòng nhấn OK để xác nhận.")) {
-        alert("Đã đặt hàng thành công!");
-    }
+    alert("Đã xóa sản phẩm " + name + " khỏi mục yêu thích thành công!");
 }

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/fontawesome-free-6.4.2-web/css/all.css">
     <title>Geral | Trang Chủ</title>
     <script src="./js/cart.js" defer></script>
+    <script src="./js/favorite.js" defer></script>
 </head>
 <body>
   <header>
@@ -62,7 +63,7 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
               <button id="search" class="btn btn-outline-success" type="submit"><i
                   class="fa-solid fa-magnifying-glass"></i></button>
               <a id="themebutton" class="btn btn-outline-success" role="button" href="./html/signin.html"><i
@@ -158,8 +159,8 @@
               class="fa fa-star orange"></i><i class="fa fa-star "></i>(5) <i style="float: right; font-size: 15px;">Đã
               bán 20</i>
           </p>
-          <a onclick="addCart('sp0001')" class="btn btn-primary" >Add to cart</a>
-          <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+          <a onclick="addCart('sp0001')" class="btn btn-primary" ><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+          <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0001')"><i class="fa-regular fa-heart fa-lg"></i></a>
         </div>
       </div>
       <div class="card " style="width: 18rem;margin-top: 20px;">
@@ -172,8 +173,8 @@
               class="fa fa-star orange"></i><i class="fa fa-star orange"></i>(2) <i
               style="float: right; font-size: 15px;">Đã bán 36</i>
           </p>
-          <a onclick="addCart('sp0002')" class="btn btn-primary" >Add to cart</a>
-          <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+          <a onclick="addCart('sp0002')" class="btn btn-primary" ><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+          <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0002')"><i class="fa-regular fa-heart fa-lg"></i></a>
         </div>
       </div>
       <div class="card " style="width: 18rem;margin-top: 20px;">
@@ -186,8 +187,8 @@
               class="fa fa-star orange"></i><i class="fa fa-star orange"></i>(25)<i
               style="float: right; font-size: 15px;">Đã bán 123</i>
           </p>
-          <a onclick="addCart('sp0003')" class="btn btn-primary" >Add to cart</a>
-          <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+          <a onclick="addCart('sp0003')" class="btn btn-primary" ><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+          <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0003')"><i class="fa-regular fa-heart fa-lg"></i></a>
         </div>
       </div>
       <div class="card " style="width: 18rem;margin-top: 20px;">
@@ -200,8 +201,8 @@
               class="fa fa-star orange"></i><i class="fa fa-star orange"></i>(51)<i
               style="float: right; font-size: 15px;">Đã bán 120</i>
           </p>
-          <a onclick="addCart('sp0004')" class="btn btn-primary" >Add to cart</a>
-          <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+          <a onclick="addCart('sp0004')" class="btn btn-primary" ><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+          <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0004')"><i class="fa-regular fa-heart fa-lg"></i></a>
         </div>
       </div>
     </div>
@@ -224,8 +225,8 @@
               class="fa fa-star orange"></i><i class="fa fa-star orange"></i>(2) <i
               style="float: right; font-size: 15px;">Đã bán 20</i>
           </p>
-          <a onclick="addCart('bs1001')" class="btn btn-primary" >Add to cart</a>
-          <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+          <a onclick="addCart('bs1001')" class="btn btn-primary" ><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+          <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('bs1001')"><i class="fa-regular fa-heart fa-lg"></i></a>
         </div>
       </div>
       <div class="card " style="width: 18rem;margin-top: 20px;">
@@ -238,8 +239,8 @@
               class="fa fa-star orange"></i><i class="fa fa-star"></i>(2) <i style="float: right; font-size: 15px;">Đã
               bán 21</i>
           </p>
-          <a onclick="addCart('bs1002')" class="btn btn-primary" >Add to cart</a>
-          <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+          <a onclick="addCart('bs1002')" class="btn btn-primary" ><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+          <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('bs1002')"><i class="fa-regular fa-heart fa-lg"></i></a>
         </div>
       </div>
       <div class="card " style="width: 18rem;margin-top: 20px;">
@@ -251,8 +252,8 @@
               class="fa fa-star orange"></i><i class="fa fa-star orange"></i>(25)<i
               style="float: right; font-size: 15px;">Đã bán 123</i>
           </p>
-          <a onclick="addCart('bs1003')" class="btn btn-primary" >Add to cart</a>
-          <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+          <a onclick="addCart('bs1003')" class="btn btn-primary" ><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+          <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('bs1003')"><i class="fa-regular fa-heart fa-lg"></i></a>
         </div>
       </div>
       <div class="card " style="width: 18rem;margin-top: 20px;">
@@ -265,8 +266,8 @@
               class="fa fa-star orange"></i><i class="fa fa-star orange"></i>(12)<i
               style="float: right; font-size: 15px;">Đã bán 120</i>
           </p>
-          <a onclick="addCart('bs1004')" class="btn btn-primary" >Add to cart</a>
-          <a class="float-end btn" role="button" style="color: red;"><i class="fa-regular fa-heart fa-lg"></i></a>
+          <a onclick="addCart('bs1004')" class="btn btn-primary" ><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+          <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('bs1004')"><i class="fa-regular fa-heart fa-lg"></i></a>
         </div>
       </div>
     </div>
