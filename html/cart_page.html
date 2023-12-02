@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="FURNITURE/aboutRegal-page.html">
-    <link rel="stylesheet" href="FURNITURE/favorite-page.html">
-    <link rel="stylesheet" href="FURNITURE/product-page.htmlget">
-    <link rel="stylesheet" href="FURNITURE/service-page.html">
     <link rel="stylesheet" href="../total.css">
     <link rel="stylesheet" href="../assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <script src="../assets/bootstrap-5.3.2-dist/js//bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="" href="../images/Logo.png">
     <title>Geral | My Cart</title>
-    <script src="./js/cart.js"></script>
+    <script src="../js/cart.js"></script>
     <script>
       window.onload=function(){showCart();};
     </script>
@@ -78,48 +74,47 @@
       </h1>
       <div class="row">
           <div class="col">
-              <table class="table container-fluid">
+              <table class="table container-fluid" id="cartDetail">
                 <thead>
-                  <tr class="text-center" id="cartDetail">
-                      <th width="100px"></th>
+                  <tr class="text-center">
+                      <th width="100px"> </th>
                       <th width="400px">Tên sản phẩm</th>
-                      <th width="200px">Giá</th>
-                      <th width="150px">Số lượng</th>
+                      <th width="200px">Số lượng</th>
+                      <th width="150px">Giá</th>
                       <th width="200px">Tổng tiền</th>
-                      <th width="50px"></th>
+                      <th width="50px"> </th>
                   </tr>
                 </thead>
                 <tbody></tbody>
               </table>
           </div>
       </div>
-      <div class="row">
+      <div class="row" style="padding-top: 25px;">
           <div class="col-3">
               <div class="d-flex" style="display:block; margin-left:20px; margin-top:10px;">
                   <input class="form-control" type="text" placeholder="Nhập mã giảm giá" aria-label="couponcode">
                   <a href="#" class="btn btn-outline-success" role="button" style="margin-left: 10px;"><i class="fa-solid fa-arrow-right-long"></i></a>
               </div>
           </div>
-          <div class="col-5" style="text-align: right;">
+          <div class="col-sm-7" style="text-align: right;">
               <div id="sum">
-                  <div style="font-size:18px;"><b>Tổng tiền:&nbsp&nbsp&nbsp</b><span
-                    id="bill_pre_tax_total"></span>&nbsp&nbsp&nbsp&nbsp</div>
-                  <div style="font-size:18px;"><b>Thuế (VAT):&nbsp&nbsp&nbsp </b><span id="bill_tax"></span>&nbsp&nbsp&nbsp
+                  <div style="font-size:18px;"><b>Tổng tiền: </b><span
+                    id="bill_pre_tax_total"></span></div>
+                  <div style="font-size:18px;"><b>Thuế (VAT): </b><span id="bill_tax"></span>
                   </div>
-                  <div style="font-size:18px;"><b>Tổng thành tiền các sản phẩm:&nbsp&nbsp&nbsp</b> <span
-                    id="bill_total"></span>&nbsp&nbsp&nbsp</div>
+                  <div style="font-size:18px;"><b>Tổng thành tiền các sản phẩm: </b> <span
+                    id="bill_total"></span></div>
               </div>
           </div>
       </div>
-      <div class="row justify-content-end cking">
-          <div class="col-3" style="padding:10px">
-              <button class="btn btn-primary btn-checking" data-bs-toggle="modal" data-bs-target="#check-out">Order <i class="fa-solid fa-circle-arrow-right"></i></button>
-          </div>
+      <div class="d-flex justify-content-end">
+        <div class="col-3 p-4">
+          <button class="btn btn-success" type="button">Đặt hàng <i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
       </div>
-      
     </main>
     <footer id="footer" style="display: flex; flex-wrap: wrap;">
-      <div class="container ">
+      <div class="container">
         <div class="row">
 <!--Giới thiệu về Geral-->
           <div class="col-sm">
