@@ -26,3 +26,30 @@ function sendMessage() {
         messageInput.value = "";
     }
 }
+
+// Xử lý sự kiện submit của form
+document.addEventListener("DOMContentLoaded", function () {
+    // Lấy ra form bằng ID
+    const form = document.querySelector('form');
+  
+    // Thêm sự kiện submit cho form
+    form.addEventListener('submit', function (event) {
+      // Ngăn chặn việc submit mặc định của form
+      event.preventDefault();
+  
+      // Lấy ra email và password từ form
+      const email = document.getElementById('form3Example3').value;
+      const password = document.getElementById('form3Example4').value;
+  
+      // Kiểm tra nếu email và password không rỗng
+      if (email.trim() !== '' && password.trim() !== '') {
+        // Hiển thị thông báo đăng ký thành công
+        alert('Đăng ký thành công!');
+        // Tùy chỉnh hành động sau khi đăng ký thành công ở đây, có thể chuyển hướng trang hoặc thực hiện các hành động khác.
+      } else {
+        // Hiển thị thông báo lỗi nếu email hoặc password trống
+        alert('Vui lòng nhập email và password!');
+      }
+    });
+  });
+  
