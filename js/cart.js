@@ -1,3 +1,4 @@
+// Tạo danh sách các sản phẩm kèm theo thông tin dưới dạng JSON
 var itemList = {
     "sp0001": {"name": "Ghế Sofa Gỗ Cao Su Tự Nhiên", "price": 9290200, "photo": "../images/products/phong_khach/ghe_sofa_1.jpg"},
     "sp0002": {"name": "Ghế Sofa Geral KOGE 701", "price": 9390200, "photo": "../images/products/phong_khach/ghe_sofa2.jpg"},
@@ -92,8 +93,11 @@ var itemList = {
     "wr5023": {"name": "Tủ Cá Nhân Di Động Gỗ Tự Nhiên GTL103", "price": 2790000, "photo": "../images/products/phong_lam_viec/tu_ca_nhan3.jpg"},
     "wr5024": {"name": "Tủ 2 Ngăn Có Khóa GTL104", "price": 1390000, "photo": "../images/products/phong_lam_viec/tu_ca_nhan4.jpg"},
 };
+// HÀM THÊM SẢN PHẨM VÀO GIỎ HÀNG
 function addCart(code){
+// Khai báo biến name lấy giá trị là name dưới dạng chuỗi của mã sản phẩm tương ứng với biến code 
     var name=itemList[code].name;
+// Kiểm tra sự tồn tại của mã sản phẩm trong localStorage, nếu không tồn tại thì thêm mới và thiết lập giá trị cho mã sản phẩm
     if(typeof localStorage[code] == "undefined") window.localStorage.setItem(code, 1);
     else{
         var current = parseInt((window.localStorage).getItem(code));
@@ -101,15 +105,17 @@ function addCart(code){
     }
     alert("Đã thêm sản phẩm " + name + " vào giỏ hàng thành công!");
 };
-
+// HÀM HIỂN THỊ SẢN PHẨM TRONG GIỎ HÀNG
 function showCart() {
+// Khai báo biến formatter để hiển thị giá tiền sản phẩm dưới dạng tiền tệ VND
     var formatter = new Intl.NumberFormat("vi-VN", {style: "currency", currency: "VND"});
+// Khai báo biến container lấy phần tử có id = cartDetail, trong đó lấy phần tử con có nhãn HTML là tbody
     var container = document.getElementById("cartDetail").getElementsByTagName("tbody")[0];
     container.innerHTML="";
-    var sum = 0;
-    var totalPreTax = 0;
-    var taxRate=0.1;
-    var tax = 0;
+    var sum = 0; // Tổng giá tiền mỗi mặt hàng
+    var totalPreTax = 0; // Tổng giá tiền đơn hàng khi chưa tính thuế
+    var taxRate=0.1; // Tỉ lệ thuế
+    var tax = 0; // Tiền thuế
     for(var i = 0; i < window.localStorage.length; i++){
         if(typeof itemList[localStorage.key(i)] === "undefined") continue;
         var tr = document.createElement("tr");
@@ -155,16 +161,21 @@ function showCart() {
     document.getElementById("bill_tax").innerHTML=formatter.format(tax);
     document.getElementById("bill_total").innerHTML=formatter.format(totalPreTax+tax);
 }
+// HÀM XÓA SẢN PHẨM KHỎI GIỎ HÀNG
 function removeCart(code) {
+// Khai báo biến name lấy giá trị là name dưới dạng chuỗi của mã sản phẩm tương ứng với biến code
     var name=itemList[code].name;
     if(typeof window.localStorage[code] !== "undefined"){
+// Xóa sản phẩm khỏi localStorage
         window.localStorage.removeItem(code);
+// Xóa nội dung của phần thân của bảng (<tbody>)
         document.getElementById("cartDetail").getElementsByTagName("tbody")[0].innerHTML="";
+// Hiển thị lại nội dung của đơn hàng
         showCart();
     }
     alert("Đã xóa sản phẩm " + name + " khỏi giỏ hàng thành công!");
 }
-
+// HÀM HIỆN HỘP THOẠI XÁC NHẬN ĐẶT HÀNG
 function confirmPurchase(){
     if (confirm("Vui lòng kiểm tra lại thông tin giao hàng cũng như đơn hàng trước khi đặt hàng. Sau khi kiểm tra, vui lòng nhấn OK để xác nhận.")) {
         alert("Đã đặt hàng thành công!");

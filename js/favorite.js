@@ -1,3 +1,4 @@
+// Tạo danh sách các sản phẩm kèm theo thông tin dưới dạng JSON
 var itemList = {
     "sp0001": {"name": "Ghế Sofa Gỗ Cao Su Tự Nhiên", "price": 9290200, "photo": "../images/products/phong_khach/ghe_sofa_1.jpg"},
     "sp0002": {"name": "Ghế Sofa Geral KOGE 701", "price": 9390200, "photo": "../images/products/phong_khach/ghe_sofa2.jpg"},
@@ -92,14 +93,19 @@ var itemList = {
     "wr5023": {"name": "Tủ Cá Nhân Di Động Gỗ Tự Nhiên GTL103", "price": 2790000, "photo": "../images/products/phong_lam_viec/tu_ca_nhan3.jpg"},
     "wr5024": {"name": "Tủ 2 Ngăn Có Khóa GTL104", "price": 1390000, "photo": "../images/products/phong_lam_viec/tu_ca_nhan4.jpg"},
 };
+// HÀM THÊM SẢN PHẨM VÀO MỤC YÊU THÍCH
 function addFavorite(code){
+// Khai báo biến name lấy giá trị là name dưới dạng chuỗi của mã sản phẩm tương ứng với biến code
     var name=itemList[code].name;
+// Kiểm tra sự tồn tại của mã sản phẩm trong localStorage
     if(typeof localStorage[code] == "undefined") window.localStorage.setItem(code, 1);
     alert("Đã thêm sản phẩm " + name + " vào mục yêu thích thành công!");
 };
-
+// HÀM HIỂN THỊ SẢN PHẨM TRONG MỤC YÊU THÍCH
 function showFavorite() {
+// Khai báo biến formatter để hiển thị giá tiền sản phẩm dưới dạng tiền tệ VND
     var formatter = new Intl.NumberFormat("vi-VN", {style: "currency", currency: "VND"});
+// Khai báo biến container lấy phần tử có id = favoriteDetail, trong đó lấy phần tử con có nhãn HTML là tbody
     var container = document.getElementById("favoriteDetail").getElementsByTagName("tbody")[0];
     container.innerHTML="";
     for(var i = 0; i < window.localStorage.length; i++){
@@ -132,11 +138,16 @@ function showFavorite() {
         container.appendChild(tr);
     }
 }
+// HÀM XÓA SẢN PHẨM KHỎI MỤC YÊU THÍCH
 function removeFavorite(code) {
+// Khai báo biến name lấy giá trị là name dưới dạng chuỗi của mã sản phẩm tương ứng với biến code
     var name=itemList[code].name;
     if(typeof window.localStorage[code] !== "undefined"){
+// Xóa sản phẩm khỏi localStorage
         window.localStorage.removeItem(code);
+// Xóa nội dung của phần thân của bảng (<tbody>)
         document.getElementById("favoriteDetail").getElementsByTagName("tbody")[0].innerHTML="";
+// Hiển thị lại nội dung của trang yêu thích
         showFavorite();
     }
     alert("Đã xóa sản phẩm " + name + " khỏi mục yêu thích thành công!");
