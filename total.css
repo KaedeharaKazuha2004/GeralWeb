@@ -303,6 +303,52 @@ body {
 .img:hover .text {
   opacity: 1;
 }
+/* Ví dụ sử dụng Media Queries cho các kích thước màn hình phổ biến */
+
+/* Điều chỉnh layout khi kích thước màn hình nhỏ hơn 768px */
+@media screen and (max-width: 768px) {
+  .col-md {
+    padding: 1.5rem; /* Giảm padding */
+  }
+  /* Điều chỉnh chiều rộng của hình ảnh */
+  .logo {
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  /* Điều chỉnh các phần tử trong sản phẩm */
+  .sale-product .card,
+  .Best-seller .card,
+  .card {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    float: none; /* Không sử dụng float */
+    margin-right: 0; /* Loại bỏ margin */
+  }
+  /* Điều chỉnh khoảng cách của footer */
+  #footer .row .col-sm {
+    margin-top: 10px;
+  }
+}
+
+/* Điều chỉnh layout khi kích thước màn hình nhỏ hơn 576px */
+@media screen and (max-width: 576px) {
+  .col-md {
+    padding: 1rem; /* Giảm padding */
+  }
+  /* Điều chỉnh kích thước của các phần tử */
+  .logo {
+    width: 20px;
+    margin-top: 3px;
+    margin-left: 5px;
+  }
+  /* Điều chỉnh layout của sản phẩm */
+  .sale-product .card,
+  .Best-seller .card,
+  .card {
+    padding-left: 15px; /* Giảm padding */
+  }
+}
+
 
 
 
