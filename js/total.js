@@ -26,30 +26,47 @@ function sendMessage() {
         messageInput.value = "";
     }
 }
-
-// Xử lý sự kiện submit của form
-document.addEventListener("DOMContentLoaded", function () {
-    // Lấy ra form bằng ID
-    const form = document.querySelector('form');
-  
-    // Thêm sự kiện submit cho form
-    form.addEventListener('submit', function (event) {
-      // Ngăn chặn việc submit mặc định của form
-      event.preventDefault();
-  
-      // Lấy ra email và password từ form
-      const email = document.getElementById('form3Example3').value;
-      const password = document.getElementById('form3Example4').value;
-  
-      // Kiểm tra nếu email và password không rỗng
-      if (email.trim() !== '' && password.trim() !== '') {
-        // Hiển thị thông báo đăng ký thành công
-        alert('Đăng ký thành công!');
-        // Tùy chỉnh hành động sau khi đăng ký thành công ở đây, có thể chuyển hướng trang hoặc thực hiện các hành động khác.
-      } else {
-        // Hiển thị thông báo lỗi nếu email hoặc password trống
-        alert('Vui lòng nhập email và password!');
-      }
-    });
-  });
-  
+// thông báo cho trang đăng nhập
+function loginValidate(frm)
+{
+    var emailReg=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if(emailReg.test(frm.email.value)==false)
+    {
+        alert("Vui long nhap email hop le :");
+        frm.email.foucs();
+        return false;
+    }
+    if(frm.psw.value.length<8)
+    {
+        alert("Mật khẩu có tối thiểu 8 kí tự !");
+        frm.psw.focus();
+        return false;
+    }
+    alert("Đã gửi dữ liệu đăng nhập");
+    frm.preventDefault() ;
+    return true;
+}
+// thông báo cho trang đăng ký
+function registerValidate(frm) {
+  var emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  if (emailReg.test(frm.email1.value) == false) {
+      alert("Vui lòng nhập email hợp lệ.");
+      frm.email1.focus();
+      return false;
+  }
+  if(frm.pass1.value.length<8)
+  {
+      alert("Mật khẩu có tối thiểu 8 kí tự.");
+      frm.pass1.focus();
+      return false;
+  }
+  if ( frm["psw-repeat"].value.length<8 ) {
+      alert("Mật khẩu có tối thiểu 8 ký tự.");
+      frm["psw-repeat"].focus();
+      return false;
+  }
+  else{
+      alert("Đã gửi dữ liệu đăng kí.");   
+      return true;
+}
+}
