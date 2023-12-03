@@ -39,7 +39,7 @@ function loginValidate(frm)
     if(frm.psw.value.length<8)
     {
         alert("Mật khẩu có tối thiểu 8 kí tự !");
-        frm.psw.focus();
+        frm.pass.focus();
         return false;
     }
     alert("Đã gửi dữ liệu đăng nhập");
