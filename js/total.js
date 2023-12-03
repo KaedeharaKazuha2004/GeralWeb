@@ -32,18 +32,18 @@ function loginValidate(frm)
     var emailReg=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if(emailReg.test(frm.email.value)==false)
     {
-        alert("Vui long nhap email hop le :");
-        frm.email.foucs();
+        alert("Vui long nhap email hop le!");
+        frm.email.focus();
         return false;
     }
-    if(frm.psw.value.length<8)
+    if(frm.pass.value.length<8)
     {
         alert("Mật khẩu có tối thiểu 8 kí tự !");
         frm.pass.focus();
         return false;
     }
     alert("Đã gửi dữ liệu đăng nhập");
-    frm.preventDefault() ;
+    frm.preventDefault();
     return true;
 }
 // thông báo cho trang đăng ký
@@ -60,13 +60,6 @@ function registerValidate(frm) {
       frm.pass1.focus();
       return false;
   }
-  if ( frm["psw-repeat"].value.length<8 ) {
-      alert("Mật khẩu có tối thiểu 8 ký tự.");
-      frm["psw-repeat"].focus();
-      return false;
-  }
-  else{
-      alert("Đã gửi dữ liệu đăng kí.");   
-      return true;
-}
+  alert("Đã gửi dữ liệu đăng kí.");   
+  return true;
 }
