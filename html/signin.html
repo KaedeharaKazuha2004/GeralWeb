@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="FURNITURE/aboutRegal-page.html">
+    <!-- <link rel="stylesheet" href="FURNITURE/aboutRegal-page.html">
     <link rel="stylesheet" href="FURNITURE/favorite-page.html">
     <link rel="stylesheet" href="FURNITURE/product-page.htmlget">
-    <link rel="stylesheet" href="FURNITURE/service-page.html">
+    <link rel="stylesheet" href="FURNITURE/service-page.html"> -->
     <link rel="stylesheet" href="../total.css">
     <link rel="stylesheet" href="../assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <script src="../assets/bootstrap-5.3.2-dist/js//bootstrap.bundle.min.js"></script>
@@ -27,7 +27,7 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
 }
 
     </style>
-    <title>Geral | Đăng Kí</title>
+    <title>Geral | Đăng ký</title>
 </head>
 <body>
   <header>
@@ -71,15 +71,15 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
                       <li><a class="dropdown-item" href="./G_vip.html"><span class="multilang" id="MENU_SERVICE_5"></span></a></li>
                     </ul>
                   </li>
-                </ul> 
+                </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
                   <button id="search" class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                  <a id="themebutton" class="btn btn-outline-success" role="button" href="html/signin.html"><i class="fa-solid fa-user"></i></a>
-                  <a id="themebutton" class="btn btn-outline-success" role="button" href="html/cart_page.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                  <a id="themebutton" class="btn btn-outline-success" role="button" href="html/favorite-page.html"><i class="fa-solid fa-heart"></i></a>
-                    <a id="themebutton" class="btn btn-outline-success" href="#" onclick="setLang('vi-VN')"><img width="30px" src="../images/flagVie.png">
-                    <a id="themebutton" class="btn btn-outline-success" href="#" onclick="setLang('en-US')"><img width="30px" src="../images/flagUK.png"></a></span>
+                  <a id="themebutton" class="btn btn-outline-success" role="button" href="login.html"><i class="fa-solid fa-user"></i></a>
+                  <a id="themebutton" class="btn btn-outline-success" role="button" href="cart_page.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a id="themebutton" class="btn btn-outline-success" role="button" href="favorite-page.html"><i class="fa-solid fa-heart"></i></a>
+                  <a id="themebutton" class="btn btn-outline-success" href="#" onclick="setLang('vi-VN')"><img width="30px" src="../images/flagVie.png">
+                  <a id="themebutton" class="btn btn-outline-success" href="#" onclick="setLang('en-US')"><img width="30px" src="../images/flagUK.png"></a></span>
                 </form>
               </div>
             </div>
@@ -90,6 +90,22 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
       <!-- Section: Design Block -->
 <section >
     <style>
+      .background-radial-gradient {
+        background-color: hsl(218, 41%, 15%);
+        background-image: radial-gradient(650px circle at 0% 0%,
+            hsl(218, 41%, 35%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%),
+          radial-gradient(1250px circle at 100% 100%,
+            hsl(218, 41%, 45%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%);
+      }
+  
       #radius-shape-1 {
         height: 220px;
         width: 220px;
@@ -118,12 +134,11 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
       <div class="row gx-lg-5 align-items-center mb-5">
         <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
-          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(286, 43%, 46%)">
-           <span class="multilang" id="MAIN_TITLE_2"></span>
+          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(286, 43%, 46%); font-size: 50px;">
+            <span class="multilang" id="MAIN_TITLE"></span> 
           </h1>
-          <p class="mb-4 opacity-70" style="color: hsl(286, 43%, 46%)">
-            <span class="multilang" id="MAIN_CONTENT_2"></span>
-          </p>
+          <p class="mb-4 opacity-70" style="color: hsl(286, 43%, 46%); font-size: 18px;">
+            <span class="multilang" id="MAIN_CONTENT"></span></p>
         </div>
   
         <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
@@ -132,54 +147,68 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
   
           <div class="card bg-glass">
             <div class="card-body px-4 py-5 px-md-5">
-                <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(286, 43%, 46%); text-align: center;">
-            <span class="multilang" id="MAIN_FORM_TITLE_2"></span>
-        </h1>
-              <form onsubmit="return loginValidate(this);" action="#" method="post" enctype="application/x-www-form-urlencoded">
-   
-                <!-- Email  -->
+                <h1 class="my-5 display-5 fw-bold ls-tight" style="color: #6a11cb; text-align: center; padding-top: 0px;" >
+                    <span class="multilang" id="MAIN_FORM_TITLE"></span>
+                </h1>
+              <form onsubmit="return registerValidate(this);" action="#" method="post" enctype="multipart/form-data">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1" class="form-control" />
+                      <label class="form-label" for="form3Example1"><span class="multilang" id="MAIN_FORM_FNAME"></span></label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example2" class="form-control" />
+                      <label class="form-label" for="form3Example2"><span class="multilang" id="MAIN_FORM_LNAME"></span></label>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Email input -->
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" style="width: 400px;" name="email"/>
+                  <input type="email" id="form3Example3" class="form-control" name="email1"/>
                   <label class="form-label" for="form3Example3">Email </label>
                 </div>
   
-                <!-- Password  -->
+                <!-- Password input -->
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" name="pass" />
-                  <label class="form-label" for="form3Example4"><span class="multilang" id="MAIN_FORM_PASS"></span></label>
+                  <input type="password" id="form3Example4" class="form-control" name="pass1" />
+                  <label class="form-label" for="form3Example4"><span id="MAIN_FORM_PASS" class="multilang"></span></label>
                 </div>
   
                 <!-- Checkbox -->
                 <div class="form-check d-flex justify-content-center mb-4">
-                  <input style="background-color: #6a11cb;" class="form-check-input me-2" type="checkbox" id="form2Example33" checked />
-                  <label class="form-check-label" for="form2Example33">
-                    Subscribe to our newsletter
+                  <input style="background-color: #ad1fff;" class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                  <label class="form-check-label" for="form2Example33" >
+                    <span class="multilang" id="MAIN_FORM_SUB"></span>
                   </label>
                 </div>
   
-                <!-- nút đăng nhập -->
-                <button type="submit" class="btn btn-primary btn-block mb-4 " style="margin-left: 150px; background-color: #6a11cb;">
-                  <span class="multilang" id="MAIN_FORM_SUBMIT_2"></span>
+                <!-- Submit button -->
+                <button  type="submit" class="btn btn-primary btn-block mb-4 pl-4" style="text-align: center; margin-left: 170px; font-size: 20px; background-color: #6a11cb;">
+                  <span class="multilang" id="MAIN_FORM_SUBMIT"></span>
+                  <a href="signin.html"></a>
                 </button>
-                    <br>
-                      <a style="margin-left: 80px; padding-bottom: 20px; "  href="login.html"><span class="multilang" id="CREAT"></span></a>
   
-                <!-- đăng nhập khác -->
+                <!-- Register buttons -->
                 <div class="text-center">
-                  <p><span style="margin-top: 10px;" class="multilang" id="MAIN_FORM_SUBWITH"></span></p>
-                  <button type="button" class="btn btn-link btn-floating mx-1" style="color: #6a11cb;">
-                    <i class="fab fa-facebook-f"></i>
+                  <p><span id="MAIN_FORM_SUBWITH" class="multilang"></span></p>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-facebook-f" style="color: #6a11cb;"></i>
                   </button>
   
-                  <button type="button" class="btn btn-link btn-floating mx-1" style="color: #6a11cb;">
+                  <button type="button" class="btn btn-link btn-floating mx-1"style="color: #6a11cb;">
                     <i class="fab fa-google"></i>
                   </button>
   
-                  <button type="button" class="btn btn-link btn-floating mx-1" style="color: #6a11cb;">
+                  <button type="button" class="btn btn-link btn-floating mx-1"style="color: #6a11cb;">
                     <i class="fab fa-twitter"></i>
                   </button>
   
-                  <button type="button" class="btn btn-link btn-floating mx-1" style="color: #6a11cb;">
+                  <button type="button" class="btn btn-link btn-floating mx-1"style="color: #6a11cb;">
                     <i class="fab fa-github"></i>
                   </button>
                 </div>
@@ -230,7 +259,7 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
                    <img src="../images/paymentLogo/logo-master.png" alt="">
                    <img src="../images/paymentLogo/logo-samsungpay.png" alt="">
                    <img src="../images/paymentLogo/logo-visa.png" alt="">
-                   <img src="return_Policy.html" alt="">
+                   <img src="../images/paymentLogo/logo-vnpay.png" alt="">
                 </div>  
             </div>
           </div>
